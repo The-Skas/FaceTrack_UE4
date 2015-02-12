@@ -1,0 +1,14 @@
+Begin Object Class=AnimMontage Name="FPP_Fire_Montage"
+   Begin Object Class=SceneThumbnailInfo Name="SceneThumbnailInfo_1"
+   End Object
+   Begin Object Name="SceneThumbnailInfo_1"
+   End Object
+   BlendInTime=0.010000
+   CompositeSections(0)=(SectionName="Default")
+   SlotAnimTracks(0)=(SlotName="Arms",AnimTrack=(AnimSegments=((AnimReference=AnimSequence'/Game/Animations/FPP_Fire.FPP_Fire',AnimEndTime=0.267000))))
+   PreviewBasePose=AnimSequence'/Game/Animations/FPP_Idle.FPP_Idle'
+   SequenceLength=0.267000
+   AnimNotifyTracks(0)=(TrackName="1",TrackColor=(R=0.500000,G=0.500000,B=0.500000,A=1.000000))
+   Skeleton=Skeleton'/Game/Character/HeroFPP_Skeleton.HeroFPP_Skeleton'
+   ThumbnailInfo=SceneThumbnailInfo'SceneThumbnailInfo_1'
+End Object

@@ -1,0 +1,699 @@
+Begin Object Class=Blueprint Name="MyHUD"
+   Begin Object Class=EdGraph Name="EventGraph"
+      Begin Object Class=K2Node_Event Name="K2Node_Event_265"
+         Begin Object Class=EdGraphPin Name="EdGraphPin_4824"
+         End Object
+         Begin Object Class=EdGraphPin Name="EdGraphPin_4825"
+         End Object
+         Begin Object Class=EdGraphPin Name="EdGraphPin_4826"
+         End Object
+         Begin Object Class=EdGraphPin Name="EdGraphPin_4827"
+         End Object
+      End Object
+      Begin Object Class=K2Node_CallFunction Name="K2Node_CallFunction_12988"
+         Begin Object Class=EdGraphPin Name="EdGraphPin_4909"
+         End Object
+         Begin Object Class=EdGraphPin Name="EdGraphPin_4910"
+         End Object
+         Begin Object Class=EdGraphPin Name="EdGraphPin_4911"
+         End Object
+         Begin Object Class=EdGraphPin Name="EdGraphPin_4912"
+         End Object
+         Begin Object Class=EdGraphPin Name="EdGraphPin_4913"
+         End Object
+         Begin Object Class=EdGraphPin Name="EdGraphPin_4914"
+         End Object
+         Begin Object Class=EdGraphPin Name="EdGraphPin_4915"
+         End Object
+         Begin Object Class=EdGraphPin Name="EdGraphPin_4916"
+         End Object
+         Begin Object Class=EdGraphPin Name="EdGraphPin_4917"
+         End Object
+         Begin Object Class=EdGraphPin Name="EdGraphPin_4918"
+         End Object
+         Begin Object Class=EdGraphPin Name="EdGraphPin_4919"
+         End Object
+         Begin Object Class=EdGraphPin Name="EdGraphPin_4920"
+         End Object
+         Begin Object Class=EdGraphPin Name="EdGraphPin_4921"
+         End Object
+         Begin Object Class=EdGraphPin Name="EdGraphPin_4922"
+         End Object
+         Begin Object Class=EdGraphPin Name="EdGraphPin_4923"
+         End Object
+         Begin Object Class=EdGraphPin Name="EdGraphPin_4924"
+         End Object
+         Begin Object Class=EdGraphPin Name="EdGraphPin_4925"
+         End Object
+         Begin Object Class=EdGraphPin Name="EdGraphPin_4926"
+         End Object
+      End Object
+      Begin Object Class=K2Node_CallFunction Name="K2Node_CallFunction_78992"
+         Begin Object Class=EdGraphPin Name="EdGraphPin_4897"
+         End Object
+         Begin Object Class=EdGraphPin Name="EdGraphPin_4898"
+         End Object
+         Begin Object Class=EdGraphPin Name="EdGraphPin_4899"
+         End Object
+         Begin Object Class=EdGraphPin Name="EdGraphPin_4900"
+         End Object
+      End Object
+      Begin Object Class=K2Node_CallFunction Name="K2Node_CallFunction_84975"
+         Begin Object Class=EdGraphPin Name="EdGraphPin_4867"
+         End Object
+         Begin Object Class=EdGraphPin Name="EdGraphPin_4868"
+         End Object
+         Begin Object Class=EdGraphPin Name="EdGraphPin_4869"
+         End Object
+         Begin Object Class=EdGraphPin Name="EdGraphPin_4870"
+         End Object
+      End Object
+      Begin Object Class=K2Node_CallFunction Name="K2Node_CallFunction_78994"
+         Begin Object Class=EdGraphPin Name="EdGraphPin_4879"
+         End Object
+         Begin Object Class=EdGraphPin Name="EdGraphPin_4880"
+         End Object
+         Begin Object Class=EdGraphPin Name="EdGraphPin_4881"
+         End Object
+      End Object
+      Begin Object Class=K2Node_CallFunction Name="K2Node_CallFunction_78996"
+         Begin Object Class=EdGraphPin Name="EdGraphPin_4888"
+         End Object
+         Begin Object Class=EdGraphPin Name="EdGraphPin_4889"
+         End Object
+         Begin Object Class=EdGraphPin Name="EdGraphPin_4890"
+         End Object
+      End Object
+      Begin Object Class=K2Node_MakeStruct Name="K2Node_MakeStruct_1"
+         Begin Object Class=EdGraphPin Name="EdGraphPin_4836"
+         End Object
+         Begin Object Class=EdGraphPin Name="EdGraphPin_4837"
+         End Object
+         Begin Object Class=EdGraphPin Name="EdGraphPin_4838"
+         End Object
+         Begin Object Class=EdGraphPin Name="EdGraphPin_4839"
+         End Object
+         Begin Object Class=EdGraphPin Name="EdGraphPin_4840"
+         End Object
+      End Object
+      Begin Object Class=EdGraphNode_Comment Name="EdGraphNode_Comment_60"
+      End Object
+   End Object
+   Begin Object Class=EdGraph Name="UserConstructionScript"
+      Begin Object Class=K2Node_FunctionEntry Name="K2Node_FunctionEntry_134"
+         Begin Object Class=EdGraphPin Name="EdGraphPin_4851"
+         End Object
+      End Object
+   End Object
+   Begin Object Class=SceneThumbnailInfo Name="SceneThumbnailInfo_0"
+   End Object
+   Begin Object Class=EdGraph Name="ReceiveDrawHUD"
+      Begin Object Class=K2Node_FunctionEntry Name="K2Node_FunctionEntry_137"
+         Begin Object Class=EdGraphPin Name="EdGraphPin_5004"
+         End Object
+         Begin Object Class=EdGraphPin Name="EdGraphPin_5005"
+         End Object
+         Begin Object Class=EdGraphPin Name="EdGraphPin_5006"
+         End Object
+      End Object
+      Begin Object Class=K2Node_VariableSet Name="K2Node_VariableSet_67"
+         Begin Object Class=EdGraphPin Name="EdGraphPin_5007"
+         End Object
+         Begin Object Class=EdGraphPin Name="EdGraphPin_5008"
+         End Object
+         Begin Object Class=EdGraphPin Name="EdGraphPin_5009"
+         End Object
+         Begin Object Class=EdGraphPin Name="EdGraphPin_5010"
+         End Object
+      End Object
+      Begin Object Class=K2Node_CallFunction Name="K2Node_CallFunction_353"
+         Begin Object Class=EdGraphPin Name="EdGraphPin_5011"
+         End Object
+         Begin Object Class=EdGraphPin Name="EdGraphPin_5012"
+         End Object
+         Begin Object Class=EdGraphPin Name="EdGraphPin_5013"
+         End Object
+         Begin Object Class=EdGraphPin Name="EdGraphPin_5014"
+         End Object
+      End Object
+   End Object
+   Begin Object Name="EventGraph"
+      Begin Object Name="K2Node_Event_265"
+         Begin Object Name="EdGraphPin_4824"
+            PinName="OutputDelegate"
+            Direction=EGPD_Output
+            PinType=(PinCategory="delegate",PinSubCategoryObject=Function'/Script/Engine.HUD:ReceiveDrawHUD')
+         End Object
+         Begin Object Name="EdGraphPin_4825"
+            PinName="then"
+            Direction=EGPD_Output
+            PinType=(PinCategory="exec")
+            LinkedTo(0)=EdGraphPin'"MyHUD:EventGraph.K2Node_CallFunction_12988.EdGraphPin_4909"'
+         End Object
+         Begin Object Name="EdGraphPin_4826"
+            PinName="SizeX"
+            PinToolTip="Size X\nInteger"
+            Direction=EGPD_Output
+            PinType=(PinCategory="int")
+            DefaultValue="0"
+            AutogeneratedDefaultValue="0"
+            LinkedTo(0)=EdGraphPin'"MyHUD:EventGraph.K2Node_CallFunction_78992.EdGraphPin_4898"'
+         End Object
+         Begin Object Name="EdGraphPin_4827"
+            PinName="SizeY"
+            PinToolTip="Size Y\nInteger"
+            Direction=EGPD_Output
+            PinType=(PinCategory="int")
+            DefaultValue="0"
+            AutogeneratedDefaultValue="0"
+            LinkedTo(0)=EdGraphPin'"MyHUD:EventGraph.K2Node_CallFunction_84975.EdGraphPin_4868"'
+         End Object
+         EventSignatureName="ReceiveDrawHUD"
+         EventSignatureClass=Class'/Script/Engine.HUD'
+         bOverrideFunction=True
+         Pins(0)=EdGraphPin'EdGraphPin_4824'
+         Pins(1)=EdGraphPin'EdGraphPin_4825'
+         Pins(2)=EdGraphPin'EdGraphPin_4826'
+         Pins(3)=EdGraphPin'EdGraphPin_4827'
+         NodePosX=336
+         NodePosY=224
+         NodeGuid=9BC04E031E4B7822F43D4596697ED3F0
+      End Object
+      Begin Object Name="K2Node_CallFunction_12988"
+         Begin Object Name="EdGraphPin_4909"
+            PinName="execute"
+            PinType=(PinCategory="exec")
+            LinkedTo(0)=EdGraphPin'"MyHUD:EventGraph.K2Node_Event_265.EdGraphPin_4825"'
+         End Object
+         Begin Object Name="EdGraphPin_4910"
+            PinName="then"
+            Direction=EGPD_Output
+            PinType=(PinCategory="exec")
+         End Object
+         Begin Object Name="EdGraphPin_4911"
+            PinName="self"
+            PinFriendlyName="Target"
+            PinToolTip="Target\nHUD Reference"
+            PinType=(PinCategory="object",PinSubCategoryObject=Class'/Script/Engine.HUD')
+         End Object
+         Begin Object Name="EdGraphPin_4912"
+            PinName="Texture"
+            PinToolTip="Texture\nTexture Reference\n\nTexture to draw."
+            PinType=(PinCategory="object",PinSubCategoryObject=Class'/Script/Engine.Texture')
+            DefaultObject=Texture2D'/Game/Textures/crosshair.crosshair'
+         End Object
+         Begin Object Name="EdGraphPin_4913"
+            PinName="ScreenX"
+            PinToolTip="Screen X\nFloat\n\nScreen-space X coordinate of upper left corner of the quad."
+            PinType=(PinCategory="float")
+            DefaultValue="0.0"
+            AutogeneratedDefaultValue="0.0"
+            LinkedTo(0)=EdGraphPin'"MyHUD:EventGraph.K2Node_CallFunction_78994.EdGraphPin_4881"'
+         End Object
+         Begin Object Name="EdGraphPin_4914"
+            PinName="ScreenY"
+            PinToolTip="Screen Y\nFloat\n\nScreen-space Y coordinate of upper left corner of the quad."
+            PinType=(PinCategory="float")
+            DefaultValue="0.0"
+            AutogeneratedDefaultValue="0.0"
+            LinkedTo(0)=EdGraphPin'"MyHUD:EventGraph.K2Node_CallFunction_78996.EdGraphPin_4890"'
+         End Object
+         Begin Object Name="EdGraphPin_4915"
+            PinName="ScreenW"
+            PinToolTip="Screen W\nFloat\n\nScreen-space width of the quad (in pixels)."
+            PinType=(PinCategory="float")
+            DefaultValue="16"
+            AutogeneratedDefaultValue="0.0"
+         End Object
+         Begin Object Name="EdGraphPin_4916"
+            PinName="ScreenH"
+            PinToolTip="Screen H\nFloat\n\nScreen-space height of the quad (in pixels)."
+            PinType=(PinCategory="float")
+            DefaultValue="16"
+            AutogeneratedDefaultValue="0.0"
+         End Object
+         Begin Object Name="EdGraphPin_4917"
+            PinName="TextureU"
+            PinToolTip="Texture U\nFloat\n\nTexture-space U coordinate of upper left corner of the quad"
+            PinType=(PinCategory="float")
+            DefaultValue="0"
+            AutogeneratedDefaultValue="0.0"
+         End Object
+         Begin Object Name="EdGraphPin_4918"
+            PinName="TextureV"
+            PinToolTip="Texture V\nFloat\n\nTexture-space V coordinate of upper left corner of the quad."
+            PinType=(PinCategory="float")
+            DefaultValue="0"
+            AutogeneratedDefaultValue="0.0"
+         End Object
+         Begin Object Name="EdGraphPin_4919"
+            PinName="TextureUWidth"
+            PinToolTip="Texture UWidth\nFloat\n\nTexture-space width of the quad (in normalized UV distance)."
+            PinType=(PinCategory="float")
+            DefaultValue="1"
+            AutogeneratedDefaultValue="0.0"
+         End Object
+         Begin Object Name="EdGraphPin_4920"
+            PinName="TextureVHeight"
+            PinToolTip="Texture VHeight\nFloat\n\nTexture-space height of the quad (in normalized UV distance)."
+            PinType=(PinCategory="float")
+            DefaultValue="1"
+            AutogeneratedDefaultValue="0.0"
+         End Object
+         Begin Object Name="EdGraphPin_4921"
+            PinName="TintColor"
+            PinToolTip="Tint Color\nLinear Color Structure\n\nVertex color for the quad."
+            PinType=(PinCategory="struct",PinSubCategoryObject=ScriptStruct'/Script/CoreUObject.Object:LinearColor')
+            DefaultValue="(R=1.000000,G=1.000000,B=1.000000,A=1.000000)"
+            AutogeneratedDefaultValue="(R=1.000000,G=1.000000,B=1.000000,A=1.000000)"
+            LinkedTo(0)=EdGraphPin'"MyHUD:EventGraph.K2Node_MakeStruct_1.EdGraphPin_4836"'
+         End Object
+         Begin Object Name="EdGraphPin_4922"
+            PinName="BlendMode"
+            PinToolTip="Blend Mode\nEBlendMode Enum\n\nControls how to blend this quad with the scene. Translucent by default."
+            PinType=(PinCategory="byte",PinSubCategoryObject=Enum'/Script/Engine.EngineTypes:EBlendMode')
+            DefaultValue="BLEND_Translucent"
+            AutogeneratedDefaultValue="BLEND_Translucent"
+         End Object
+         Begin Object Name="EdGraphPin_4923"
+            PinName="Scale"
+            PinToolTip="Scale\nFloat\n\nAmount to scale the entire texture (horizontally and vertically)"
+            PinType=(PinCategory="float")
+            DefaultValue="1.000000"
+            AutogeneratedDefaultValue="1.000000"
+         End Object
+         Begin Object Name="EdGraphPin_4924"
+            PinName="bScalePosition"
+            PinToolTip="Scale Position\nBoolean\n\nWhether the \"Scale\" parameter should also scale the position of this draw call."
+            PinType=(PinCategory="bool")
+            DefaultValue="true"
+            AutogeneratedDefaultValue="false"
+         End Object
+         Begin Object Name="EdGraphPin_4925"
+            PinName="Rotation"
+            PinToolTip="Rotation\nFloat\n\nAmount to rotate this quad"
+            PinType=(PinCategory="float")
+            DefaultValue="0.000000"
+            AutogeneratedDefaultValue="0.000000"
+            bAdvancedView=True
+         End Object
+         Begin Object Name="EdGraphPin_4926"
+            PinName="RotPivot"
+            PinToolTip="Rot Pivot\nVector 2D Structure\n\nLocation (as proportion of quad, 0-1) to rotate about"
+            PinType=(PinCategory="struct",PinSubCategoryObject=ScriptStruct'/Script/CoreUObject.Object:Vector2D')
+            bAdvancedView=True
+         End Object
+         FunctionReference=(MemberName="DrawTexture",bSelfContext=True)
+         Pins(0)=EdGraphPin'EdGraphPin_4909'
+         Pins(1)=EdGraphPin'EdGraphPin_4910'
+         Pins(2)=EdGraphPin'EdGraphPin_4911'
+         Pins(3)=EdGraphPin'EdGraphPin_4912'
+         Pins(4)=EdGraphPin'EdGraphPin_4913'
+         Pins(5)=EdGraphPin'EdGraphPin_4914'
+         Pins(6)=EdGraphPin'EdGraphPin_4915'
+         Pins(7)=EdGraphPin'EdGraphPin_4916'
+         Pins(8)=EdGraphPin'EdGraphPin_4917'
+         Pins(9)=EdGraphPin'EdGraphPin_4918'
+         Pins(10)=EdGraphPin'EdGraphPin_4919'
+         Pins(11)=EdGraphPin'EdGraphPin_4920'
+         Pins(12)=EdGraphPin'EdGraphPin_4921'
+         Pins(13)=EdGraphPin'EdGraphPin_4922'
+         Pins(14)=EdGraphPin'EdGraphPin_4923'
+         Pins(15)=EdGraphPin'EdGraphPin_4924'
+         Pins(16)=EdGraphPin'EdGraphPin_4925'
+         Pins(17)=EdGraphPin'EdGraphPin_4926'
+         NodePosX=1376
+         NodePosY=288
+         ErrorType=1
+         ErrorMsg="Error Default value \'\' for  InUV0   is invalid: \'Literal values are not allowed for pass-by-reference parameters.\'\nError Default value \'\' for  InUV1   is invalid: \'Literal values are not allowed for pass-by-reference parameters.\'\nError Default value \'\' for  InUV0   is invalid: \'Literal values are not allowed for pass-by-reference parameters.\'\nError Default value \'\' for  InUV1   is invalid: \'Literal values are not allowed for pass-by-reference parameters.\'"
+         NodeGuid=3260DDC8384340AA06219DB792AB5639
+         AdvancedPinDisplay=Hidden
+      End Object
+      Begin Object Name="K2Node_CallFunction_78992"
+         Begin Object Name="EdGraphPin_4897"
+            PinName="self"
+            PinFriendlyName="Target"
+            PinToolTip="Target\nKismet Math Library Reference"
+            PinType=(PinCategory="object",PinSubCategoryObject=Class'/Script/Engine.KismetMathLibrary')
+            DefaultObject=Default__KismetMathLibrary
+            bHidden=True
+         End Object
+         Begin Object Name="EdGraphPin_4898"
+            PinName="A"
+            PinToolTip="A\nInteger"
+            PinType=(PinCategory="int")
+            DefaultValue="0"
+            AutogeneratedDefaultValue="0"
+            LinkedTo(0)=EdGraphPin'"MyHUD:EventGraph.K2Node_Event_265.EdGraphPin_4826"'
+         End Object
+         Begin Object Name="EdGraphPin_4899"
+            PinName="B"
+            PinToolTip="B\nInteger"
+            PinType=(PinCategory="int")
+            DefaultValue="2"
+            AutogeneratedDefaultValue="0"
+         End Object
+         Begin Object Name="EdGraphPin_4900"
+            PinName="ReturnValue"
+            PinToolTip="Return Value\nInteger"
+            Direction=EGPD_Output
+            PinType=(PinCategory="int")
+            DefaultValue="0"
+            AutogeneratedDefaultValue="0"
+            LinkedTo(0)=EdGraphPin'"MyHUD:EventGraph.K2Node_CallFunction_78994.EdGraphPin_4880"'
+         End Object
+         bIsPureFunc=True
+         FunctionReference=(MemberParentClass=Class'/Script/Engine.KismetMathLibrary',MemberName="Divide_IntInt")
+         Pins(0)=EdGraphPin'EdGraphPin_4897'
+         Pins(1)=EdGraphPin'EdGraphPin_4898'
+         Pins(2)=EdGraphPin'EdGraphPin_4899'
+         Pins(3)=EdGraphPin'EdGraphPin_4900'
+         NodePosX=864
+         NodePosY=352
+         NodeGuid=2DAEE143ED48A521022C8A9C47844CF9
+      End Object
+      Begin Object Name="K2Node_CallFunction_84975"
+         Begin Object Name="EdGraphPin_4867"
+            PinName="self"
+            PinFriendlyName="Target"
+            PinToolTip="Target\nKismet Math Library Reference"
+            PinType=(PinCategory="object",PinSubCategoryObject=Class'/Script/Engine.KismetMathLibrary')
+            DefaultObject=Default__KismetMathLibrary
+            bHidden=True
+         End Object
+         Begin Object Name="EdGraphPin_4868"
+            PinName="A"
+            PinToolTip="A\nInteger"
+            PinType=(PinCategory="int")
+            DefaultValue="0"
+            AutogeneratedDefaultValue="0"
+            LinkedTo(0)=EdGraphPin'"MyHUD:EventGraph.K2Node_Event_265.EdGraphPin_4827"'
+         End Object
+         Begin Object Name="EdGraphPin_4869"
+            PinName="B"
+            PinToolTip="B\nInteger"
+            PinType=(PinCategory="int")
+            DefaultValue="2"
+            AutogeneratedDefaultValue="0"
+         End Object
+         Begin Object Name="EdGraphPin_4870"
+            PinName="ReturnValue"
+            PinToolTip="Return Value\nInteger"
+            Direction=EGPD_Output
+            PinType=(PinCategory="int")
+            DefaultValue="0"
+            AutogeneratedDefaultValue="0"
+            LinkedTo(0)=EdGraphPin'"MyHUD:EventGraph.K2Node_CallFunction_78996.EdGraphPin_4889"'
+         End Object
+         bIsPureFunc=True
+         FunctionReference=(MemberParentClass=Class'/Script/Engine.KismetMathLibrary',MemberName="Divide_IntInt")
+         Pins(0)=EdGraphPin'EdGraphPin_4867'
+         Pins(1)=EdGraphPin'EdGraphPin_4868'
+         Pins(2)=EdGraphPin'EdGraphPin_4869'
+         Pins(3)=EdGraphPin'EdGraphPin_4870'
+         NodePosX=864
+         NodePosY=432
+         NodeGuid=A7269878FA457C8265617BAA4611DBEA
+      End Object
+      Begin Object Name="K2Node_CallFunction_78994"
+         Begin Object Name="EdGraphPin_4879"
+            PinName="self"
+            PinFriendlyName="Target"
+            PinToolTip="Target\nKismet Math Library Reference"
+            PinType=(PinCategory="object",PinSubCategoryObject=Class'/Script/Engine.KismetMathLibrary')
+            DefaultObject=Default__KismetMathLibrary
+            bHidden=True
+         End Object
+         Begin Object Name="EdGraphPin_4880"
+            PinName="InInt"
+            PinToolTip="In Int\nInteger"
+            PinType=(PinCategory="int")
+            DefaultValue="0"
+            AutogeneratedDefaultValue="0"
+            LinkedTo(0)=EdGraphPin'"MyHUD:EventGraph.K2Node_CallFunction_78992.EdGraphPin_4900"'
+         End Object
+         Begin Object Name="EdGraphPin_4881"
+            PinName="ReturnValue"
+            PinToolTip="Return Value\nFloat"
+            Direction=EGPD_Output
+            PinType=(PinCategory="float")
+            DefaultValue="0.0"
+            AutogeneratedDefaultValue="0.0"
+            LinkedTo(0)=EdGraphPin'"MyHUD:EventGraph.K2Node_CallFunction_12988.EdGraphPin_4913"'
+         End Object
+         bIsPureFunc=True
+         FunctionReference=(MemberParentClass=Class'/Script/Engine.KismetMathLibrary',MemberName="Conv_IntToFloat")
+         Pins(0)=EdGraphPin'EdGraphPin_4879'
+         Pins(1)=EdGraphPin'EdGraphPin_4880'
+         Pins(2)=EdGraphPin'EdGraphPin_4881'
+         NodePosX=1216
+         NodePosY=368
+         NodeGuid=2419CCB5BA44A069CF810DB6761260EF
+      End Object
+      Begin Object Name="K2Node_CallFunction_78996"
+         Begin Object Name="EdGraphPin_4888"
+            PinName="self"
+            PinFriendlyName="Target"
+            PinToolTip="Target\nKismet Math Library Reference"
+            PinType=(PinCategory="object",PinSubCategoryObject=Class'/Script/Engine.KismetMathLibrary')
+            DefaultObject=Default__KismetMathLibrary
+            bHidden=True
+         End Object
+         Begin Object Name="EdGraphPin_4889"
+            PinName="InInt"
+            PinToolTip="In Int\nInteger"
+            PinType=(PinCategory="int")
+            DefaultValue="0"
+            AutogeneratedDefaultValue="0"
+            LinkedTo(0)=EdGraphPin'"MyHUD:EventGraph.K2Node_CallFunction_84975.EdGraphPin_4870"'
+         End Object
+         Begin Object Name="EdGraphPin_4890"
+            PinName="ReturnValue"
+            PinToolTip="Return Value\nFloat"
+            Direction=EGPD_Output
+            PinType=(PinCategory="float")
+            DefaultValue="0.0"
+            AutogeneratedDefaultValue="0.0"
+            LinkedTo(0)=EdGraphPin'"MyHUD:EventGraph.K2Node_CallFunction_12988.EdGraphPin_4914"'
+         End Object
+         bIsPureFunc=True
+         FunctionReference=(MemberParentClass=Class'/Script/Engine.KismetMathLibrary',MemberName="Conv_IntToFloat")
+         Pins(0)=EdGraphPin'EdGraphPin_4888'
+         Pins(1)=EdGraphPin'EdGraphPin_4889'
+         Pins(2)=EdGraphPin'EdGraphPin_4890'
+         NodePosX=1216
+         NodePosY=448
+         NodeGuid=97D7E45CB44D6CC05825E9982C819AB1
+      End Object
+      Begin Object Name="K2Node_MakeStruct_1"
+         Begin Object Name="EdGraphPin_4836"
+            PinName="LinearColor"
+            Direction=EGPD_Output
+            PinType=(PinCategory="struct",PinSubCategoryObject=ScriptStruct'/Script/CoreUObject.Object:LinearColor')
+            LinkedTo(0)=EdGraphPin'"MyHUD:EventGraph.K2Node_CallFunction_12988.EdGraphPin_4921"'
+         End Object
+         Begin Object Name="EdGraphPin_4837"
+            PinName="R"
+            PinFriendlyName="R"
+            PinToolTip="R\nFloat\n\nR"
+            PinType=(PinCategory="float")
+            DefaultValue="1"
+            AutogeneratedDefaultValue="0.000000"
+         End Object
+         Begin Object Name="EdGraphPin_4838"
+            PinName="G"
+            PinFriendlyName="G"
+            PinToolTip="G\nFloat\n\nG"
+            PinType=(PinCategory="float")
+            DefaultValue="1"
+            AutogeneratedDefaultValue="0.000000"
+         End Object
+         Begin Object Name="EdGraphPin_4839"
+            PinName="B"
+            PinFriendlyName="B"
+            PinToolTip="B\nFloat\n\nB"
+            PinType=(PinCategory="float")
+            DefaultValue="1"
+            AutogeneratedDefaultValue="0.000000"
+         End Object
+         Begin Object Name="EdGraphPin_4840"
+            PinName="A"
+            PinFriendlyName="A"
+            PinToolTip="A\nFloat\n\nA"
+            PinType=(PinCategory="float")
+            DefaultValue="1"
+            AutogeneratedDefaultValue="0.000000"
+         End Object
+         ShowPinForProperties(0)=(PropertyName="R",PropertyFriendlyName="R",PropertyTooltip="R",bShowPin=True,bCanToggleVisibility=True)
+         ShowPinForProperties(1)=(PropertyName="G",PropertyFriendlyName="G",PropertyTooltip="G",bShowPin=True,bCanToggleVisibility=True)
+         ShowPinForProperties(2)=(PropertyName="B",PropertyFriendlyName="B",PropertyTooltip="B",bShowPin=True,bCanToggleVisibility=True)
+         ShowPinForProperties(3)=(PropertyName="A",PropertyFriendlyName="A",PropertyTooltip="A",bShowPin=True,bCanToggleVisibility=True)
+         StructType=ScriptStruct'/Script/CoreUObject.Object:LinearColor'
+         Pins(0)=EdGraphPin'EdGraphPin_4836'
+         Pins(1)=EdGraphPin'EdGraphPin_4837'
+         Pins(2)=EdGraphPin'EdGraphPin_4838'
+         Pins(3)=EdGraphPin'EdGraphPin_4839'
+         Pins(4)=EdGraphPin'EdGraphPin_4840'
+         NodePosX=880
+         NodePosY=784
+         NodeGuid=4F2F1000FB49C007526B2B8088DA146E
+      End Object
+      Begin Object Name="EdGraphNode_Comment_60"
+         NodePosX=832
+         NodePosY=176
+         NodeWidth=832
+         NodeHeight=800
+         NodeComment="Draw crosshair in center of screen"
+         NodeGuid=67FE1862A34361544897BD978F45730A
+      End Object
+      Schema=Class'/Script/BlueprintGraph.EdGraphSchema_K2'
+      Nodes(0)=K2Node_Event'K2Node_Event_265'
+      Nodes(1)=K2Node_CallFunction'K2Node_CallFunction_12988'
+      Nodes(2)=K2Node_CallFunction'K2Node_CallFunction_78992'
+      Nodes(3)=K2Node_CallFunction'K2Node_CallFunction_84975'
+      Nodes(4)=K2Node_CallFunction'K2Node_CallFunction_78994'
+      Nodes(5)=K2Node_CallFunction'K2Node_CallFunction_78996'
+      Nodes(6)=K2Node_MakeStruct'K2Node_MakeStruct_1'
+      Nodes(7)=EdGraphNode_Comment'EdGraphNode_Comment_60'
+      bAllowDeletion=False
+      GraphGuid=44C2F15B42C3D1B19D512FB4B0ED5C8C
+   End Object
+   Begin Object Name="UserConstructionScript"
+      Begin Object Name="K2Node_FunctionEntry_134"
+         Begin Object Name="EdGraphPin_4851"
+            PinName="then"
+            Direction=EGPD_Output
+            PinType=(PinCategory="exec")
+         End Object
+         SignatureClass=Class'/Script/Engine.Actor'
+         SignatureName="UserConstructionScript"
+         Pins(0)=EdGraphPin'EdGraphPin_4851'
+         NodeGuid=23D1A1C7C54B5DBC072E45AD86727F95
+      End Object
+      Schema=Class'/Script/BlueprintGraph.EdGraphSchema_K2'
+      Nodes(0)=K2Node_FunctionEntry'K2Node_FunctionEntry_134'
+      bAllowDeletion=False
+      GraphGuid=2DD326134297E4711817D98E35D4EDB3
+   End Object
+   Begin Object Name="SceneThumbnailInfo_0"
+   End Object
+   Begin Object Name="ReceiveDrawHUD"
+      Begin Object Name="K2Node_FunctionEntry_137"
+         Begin Object Name="EdGraphPin_5004"
+            PinName="then"
+            Direction=EGPD_Output
+            PinType=(PinCategory="exec")
+            LinkedTo(0)=EdGraphPin'"MyHUD:ReceiveDrawHUD.K2Node_VariableSet_67.EdGraphPin_5007"'
+         End Object
+         Begin Object Name="EdGraphPin_5005"
+            PinName="SizeX"
+            PinToolTip="Size X\nInteger"
+            Direction=EGPD_Output
+            PinType=(PinCategory="int")
+            DefaultValue="0"
+            AutogeneratedDefaultValue="0"
+            LinkedTo(0)=EdGraphPin'"MyHUD:ReceiveDrawHUD.K2Node_VariableSet_67.EdGraphPin_5009"'
+         End Object
+         Begin Object Name="EdGraphPin_5006"
+            PinName="SizeY"
+            PinToolTip="Size Y\nInteger"
+            Direction=EGPD_Output
+            PinType=(PinCategory="int")
+            DefaultValue="0"
+            AutogeneratedDefaultValue="0"
+            LinkedTo(0)=EdGraphPin'"MyHUD:ReceiveDrawHUD.K2Node_VariableSet_67.EdGraphPin_5010"'
+         End Object
+         CustomGeneratedFunctionName="ReceiveDrawHUD"
+         SignatureClass=Class'/Script/Engine.HUD'
+         SignatureName="ReceiveDrawHUD"
+         Pins(0)=EdGraphPin'EdGraphPin_5004'
+         Pins(1)=EdGraphPin'EdGraphPin_5005'
+         Pins(2)=EdGraphPin'EdGraphPin_5006'
+         NodePosX=-200
+         NodePosY=-2000
+         NodeGuid=16C12BCAF647E75347147A98B32FF5C2
+      End Object
+      Begin Object Name="K2Node_VariableSet_67"
+         Begin Object Name="EdGraphPin_5007"
+            PinName="execute"
+            PinType=(PinCategory="exec")
+            LinkedTo(0)=EdGraphPin'"MyHUD:ReceiveDrawHUD.K2Node_FunctionEntry_137.EdGraphPin_5004"'
+         End Object
+         Begin Object Name="EdGraphPin_5008"
+            PinName="then"
+            Direction=EGPD_Output
+            PinType=(PinCategory="exec")
+            LinkedTo(0)=EdGraphPin'"MyHUD:ReceiveDrawHUD.K2Node_CallFunction_353.EdGraphPin_5011"'
+         End Object
+         Begin Object Name="EdGraphPin_5009"
+            PinName="K2Node_Event_SizeX"
+            PinType=(PinCategory="int")
+            LinkedTo(0)=EdGraphPin'"MyHUD:ReceiveDrawHUD.K2Node_FunctionEntry_137.EdGraphPin_5005"'
+         End Object
+         Begin Object Name="EdGraphPin_5010"
+            PinName="K2Node_Event_SizeY"
+            PinType=(PinCategory="int")
+            LinkedTo(0)=EdGraphPin'"MyHUD:ReceiveDrawHUD.K2Node_FunctionEntry_137.EdGraphPin_5006"'
+         End Object
+         VariableReference=(bSelfContext=True)
+         Pins(0)=EdGraphPin'EdGraphPin_5007'
+         Pins(1)=EdGraphPin'EdGraphPin_5008'
+         Pins(2)=EdGraphPin'EdGraphPin_5009'
+         Pins(3)=EdGraphPin'EdGraphPin_5010'
+         NodePosX=-1520
+         NodePosY=-2000
+         NodeGuid=E2528B674D48745A10ACE7BCDA935DE8
+      End Object
+      Begin Object Name="K2Node_CallFunction_353"
+         Begin Object Name="EdGraphPin_5011"
+            PinName="execute"
+            PinType=(PinCategory="exec")
+            LinkedTo(0)=EdGraphPin'"MyHUD:ReceiveDrawHUD.K2Node_VariableSet_67.EdGraphPin_5008"'
+         End Object
+         Begin Object Name="EdGraphPin_5012"
+            PinName="then"
+            Direction=EGPD_Output
+            PinType=(PinCategory="exec")
+         End Object
+         Begin Object Name="EdGraphPin_5013"
+            PinName="self"
+            PinFriendlyName="Target"
+            PinToolTip="Target\nObject Reference"
+            PinType=(PinCategory="object",PinSubCategory="self",PinSubCategoryObject=BlueprintGeneratedClass'"SKEL_MyHUD_C"')
+         End Object
+         Begin Object Name="EdGraphPin_5014"
+            PinName="EntryPoint"
+            PinToolTip="Entry Point\nInteger\n\nThe entry point to start code execution at."
+            PinType=(PinCategory="int")
+            DefaultValue="0"
+            AutogeneratedDefaultValue="0"
+         End Object
+         FunctionReference=(MemberName="ExecuteUbergraph_MyHUD",bSelfContext=True)
+         Pins(0)=EdGraphPin'EdGraphPin_5011'
+         Pins(1)=EdGraphPin'EdGraphPin_5012'
+         Pins(2)=EdGraphPin'EdGraphPin_5013'
+         Pins(3)=EdGraphPin'EdGraphPin_5014'
+         NodePosX=300
+         NodePosY=-2000
+         NodeGuid=4F9AA34D0F4646C52DFD5AA5E5AD3259
+      End Object
+      Schema=Class'/Script/BlueprintGraph.EdGraphSchema_K2'
+      Nodes(0)=K2Node_FunctionEntry'K2Node_FunctionEntry_137'
+      Nodes(1)=K2Node_VariableSet'K2Node_VariableSet_67'
+      Nodes(2)=K2Node_CallFunction'K2Node_CallFunction_353'
+      GraphGuid=8F4EB19708495B44F08EAB8BF2FB3DD1
+   End Object
+   ParentClass=Class'/Script/Engine.HUD'
+   BlueprintDescription="This HUD Blueprint draws a crosshair on the screen"
+   SimpleConstructionScript=SimpleConstructionScript'SimpleConstructionScript_0'
+   UbergraphPages(0)=EdGraph'EventGraph'
+   FunctionGraphs(0)=EdGraph'UserConstructionScript'
+   BlueprintSystemVersion=2
+   LastEditedDocuments(0)=(EditedObject=EdGraph'UserConstructionScript',SavedZoomAmount=1.000000)
+   LastEditedDocuments(1)=(EditedObject=EdGraph'EventGraph',SavedViewOffset=(X=574.585876,Y=-101.063950),SavedZoomAmount=0.750000)
+   ThumbnailInfo=SceneThumbnailInfo'SceneThumbnailInfo_0'
+   GeneratedClass=BlueprintGeneratedClass'MyHUD_C'
+   bLegacyNeedToPurgeSkelRefs=False
+   bLegacyGeneratedClassIsAuthoritative=True
+   BlueprintGuid=DBDBA6613290E1B0281C9C00601E892F
+End Object

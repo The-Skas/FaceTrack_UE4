@@ -1,0 +1,731 @@
+Begin Object Class=Blueprint Name="MyProjectile"
+   Begin Object Class=EdGraph Name="EventGraph"
+      Begin Object Class=K2Node_CallFunction Name="K2Node_CallFunction_8098"
+         Begin Object Class=EdGraphPin Name="EdGraphPin_3752"
+         End Object
+         Begin Object Class=EdGraphPin Name="EdGraphPin_3753"
+         End Object
+         Begin Object Class=EdGraphPin Name="EdGraphPin_3754"
+         End Object
+      End Object
+      Begin Object Class=K2Node_CallFunction Name="K2Node_CallFunction_9630"
+         Begin Object Class=EdGraphPin Name="EdGraphPin_3734"
+         End Object
+         Begin Object Class=EdGraphPin Name="EdGraphPin_3735"
+         End Object
+      End Object
+      Begin Object Class=K2Node_CallFunction Name="K2Node_CallFunction_10693"
+         Begin Object Class=EdGraphPin Name="EdGraphPin_3716"
+         End Object
+         Begin Object Class=EdGraphPin Name="EdGraphPin_3717"
+         End Object
+         Begin Object Class=EdGraphPin Name="EdGraphPin_3718"
+         End Object
+         Begin Object Class=EdGraphPin Name="EdGraphPin_3719"
+         End Object
+         Begin Object Class=EdGraphPin Name="EdGraphPin_3720"
+         End Object
+         Begin Object Class=EdGraphPin Name="EdGraphPin_3721"
+         End Object
+      End Object
+      Begin Object Class=K2Node_CallFunction Name="K2Node_CallFunction_10729"
+         Begin Object Class=EdGraphPin Name="EdGraphPin_3761"
+         End Object
+         Begin Object Class=EdGraphPin Name="EdGraphPin_3762"
+         End Object
+      End Object
+      Begin Object Class=K2Node_CallFunction Name="K2Node_CallFunction_10817"
+         Begin Object Class=EdGraphPin Name="EdGraphPin_3740"
+         End Object
+         Begin Object Class=EdGraphPin Name="EdGraphPin_3741"
+         End Object
+         Begin Object Class=EdGraphPin Name="EdGraphPin_3742"
+         End Object
+         Begin Object Class=EdGraphPin Name="EdGraphPin_3743"
+         End Object
+      End Object
+      Begin Object Class=EdGraphNode_Comment Name="EdGraphNode_Comment_53"
+      End Object
+      Begin Object Class=K2Node_Event Name="K2Node_Event_68"
+         Begin Object Class=EdGraphPin Name="EdGraphPin_3661"
+         End Object
+         Begin Object Class=EdGraphPin Name="EdGraphPin_3662"
+         End Object
+         Begin Object Class=EdGraphPin Name="EdGraphPin_3663"
+         End Object
+         Begin Object Class=EdGraphPin Name="EdGraphPin_3664"
+         End Object
+         Begin Object Class=EdGraphPin Name="EdGraphPin_3665"
+         End Object
+         Begin Object Class=EdGraphPin Name="EdGraphPin_3666"
+         End Object
+         Begin Object Class=EdGraphPin Name="EdGraphPin_3667"
+         End Object
+         Begin Object Class=EdGraphPin Name="EdGraphPin_3668"
+         End Object
+         Begin Object Class=EdGraphPin Name="EdGraphPin_3669"
+         End Object
+         Begin Object Class=EdGraphPin Name="EdGraphPin_3670"
+         End Object
+      End Object
+      Begin Object Class=K2Node_CallFunction Name="K2Node_CallFunction_2325"
+         Begin Object Class=EdGraphPin Name="EdGraphPin_3767"
+         End Object
+         Begin Object Class=EdGraphPin Name="EdGraphPin_3768"
+         End Object
+         Begin Object Class=EdGraphPin Name="EdGraphPin_3769"
+         End Object
+      End Object
+      Begin Object Class=K2Node_IfThenElse Name="K2Node_IfThenElse_5"
+         Begin Object Class=EdGraphPin Name="EdGraphPin_3776"
+         End Object
+         Begin Object Class=EdGraphPin Name="EdGraphPin_3777"
+         End Object
+         Begin Object Class=EdGraphPin Name="EdGraphPin_3778"
+         End Object
+         Begin Object Class=EdGraphPin Name="EdGraphPin_3779"
+         End Object
+      End Object
+   End Object
+   Begin Object Class=EdGraph Name="UserConstructionScript"
+      Begin Object Class=K2Node_FunctionEntry Name="K2Node_FunctionEntry_680"
+         Begin Object Class=EdGraphPin Name="EdGraphPin_3658"
+         End Object
+      End Object
+   End Object
+   Begin Object Class=SceneThumbnailInfo Name="SceneThumbnailInfo_5"
+   End Object
+   Begin Object Class=SceneComponent Name="SceneComponent_0"
+   End Object
+   Begin Object Class=EdGraph Name="ReceiveHit"
+      Begin Object Class=K2Node_FunctionEntry Name="K2Node_FunctionEntry_75"
+         Begin Object Class=EdGraphPin Name="EdGraphPin_3865"
+         End Object
+         Begin Object Class=EdGraphPin Name="EdGraphPin_3866"
+         End Object
+         Begin Object Class=EdGraphPin Name="EdGraphPin_3867"
+         End Object
+         Begin Object Class=EdGraphPin Name="EdGraphPin_3868"
+         End Object
+         Begin Object Class=EdGraphPin Name="EdGraphPin_3869"
+         End Object
+         Begin Object Class=EdGraphPin Name="EdGraphPin_3870"
+         End Object
+         Begin Object Class=EdGraphPin Name="EdGraphPin_3871"
+         End Object
+         Begin Object Class=EdGraphPin Name="EdGraphPin_3872"
+         End Object
+         Begin Object Class=EdGraphPin Name="EdGraphPin_3873"
+         End Object
+      End Object
+      Begin Object Class=K2Node_VariableSet Name="K2Node_VariableSet_23"
+         Begin Object Class=EdGraphPin Name="EdGraphPin_3874"
+         End Object
+         Begin Object Class=EdGraphPin Name="EdGraphPin_3875"
+         End Object
+         Begin Object Class=EdGraphPin Name="EdGraphPin_3876"
+         End Object
+         Begin Object Class=EdGraphPin Name="EdGraphPin_3877"
+         End Object
+         Begin Object Class=EdGraphPin Name="EdGraphPin_3878"
+         End Object
+         Begin Object Class=EdGraphPin Name="EdGraphPin_3879"
+         End Object
+         Begin Object Class=EdGraphPin Name="EdGraphPin_3880"
+         End Object
+         Begin Object Class=EdGraphPin Name="EdGraphPin_3881"
+         End Object
+         Begin Object Class=EdGraphPin Name="EdGraphPin_3882"
+         End Object
+         Begin Object Class=EdGraphPin Name="EdGraphPin_3883"
+         End Object
+      End Object
+      Begin Object Class=K2Node_CallFunction Name="K2Node_CallFunction_147"
+         Begin Object Class=EdGraphPin Name="EdGraphPin_3884"
+         End Object
+         Begin Object Class=EdGraphPin Name="EdGraphPin_3885"
+         End Object
+         Begin Object Class=EdGraphPin Name="EdGraphPin_3886"
+         End Object
+         Begin Object Class=EdGraphPin Name="EdGraphPin_3887"
+         End Object
+      End Object
+   End Object
+   Begin Object Name="EventGraph"
+      Begin Object Name="K2Node_CallFunction_8098"
+         Begin Object Name="EdGraphPin_3752"
+            PinName="execute"
+            PinType=(PinCategory="exec")
+            LinkedTo(0)=EdGraphPin'"MyProjectile:EventGraph.K2Node_CallFunction_10693.EdGraphPin_3717"'
+         End Object
+         Begin Object Name="EdGraphPin_3753"
+            PinName="then"
+            Direction=EGPD_Output
+            PinType=(PinCategory="exec")
+         End Object
+         Begin Object Name="EdGraphPin_3754"
+            PinName="self"
+            PinFriendlyName="Target"
+            PinToolTip="Target\nActor Reference"
+            PinType=(PinCategory="object",PinSubCategoryObject=Class'/Script/Engine.Actor')
+         End Object
+         FunctionReference=(MemberName="K2_DestroyActor",bSelfContext=True)
+         Pins(0)=EdGraphPin'EdGraphPin_3752'
+         Pins(1)=EdGraphPin'EdGraphPin_3753'
+         Pins(2)=EdGraphPin'EdGraphPin_3754'
+         NodePosX=16
+         NodePosY=272
+         NodeComment="Then destroy this projectile"
+         NodeGuid=13609B38484887C7B04A3E825EE38B60
+      End Object
+      Begin Object Name="K2Node_CallFunction_9630"
+         Begin Object Name="EdGraphPin_3734"
+            PinName="self"
+            PinFriendlyName="Target"
+            PinToolTip="Target\nActor Reference"
+            PinType=(PinCategory="object",PinSubCategoryObject=Class'/Script/Engine.Actor')
+         End Object
+         Begin Object Name="EdGraphPin_3735"
+            PinName="ReturnValue"
+            PinToolTip="Return Value\nVector "
+            Direction=EGPD_Output
+            PinType=(PinCategory="struct",PinSubCategoryObject=ScriptStruct'/Script/CoreUObject.Object:Vector')
+            DefaultValue="0, 0, 0"
+            AutogeneratedDefaultValue="0, 0, 0"
+            LinkedTo(0)=EdGraphPin'"MyProjectile:EventGraph.K2Node_CallFunction_10693.EdGraphPin_3720"'
+         End Object
+         bIsPureFunc=True
+         bIsConstFunc=True
+         FunctionReference=(MemberName="K2_GetActorLocation",bSelfContext=True)
+         Pins(0)=EdGraphPin'EdGraphPin_3734'
+         Pins(1)=EdGraphPin'EdGraphPin_3735'
+         NodePosX=-864
+         NodePosY=608
+         NodeGuid=BCFF2F782547522BB005758E77A1CD7F
+      End Object
+      Begin Object Name="K2Node_CallFunction_10693"
+         Begin Object Name="EdGraphPin_3716"
+            PinName="execute"
+            PinType=(PinCategory="exec")
+            LinkedTo(0)=EdGraphPin'"MyProjectile:EventGraph.K2Node_IfThenElse_5.EdGraphPin_3778"'
+         End Object
+         Begin Object Name="EdGraphPin_3717"
+            PinName="then"
+            Direction=EGPD_Output
+            PinType=(PinCategory="exec")
+            LinkedTo(0)=EdGraphPin'"MyProjectile:EventGraph.K2Node_CallFunction_8098.EdGraphPin_3752"'
+         End Object
+         Begin Object Name="EdGraphPin_3718"
+            PinName="self"
+            PinFriendlyName="Target"
+            PinToolTip="Target\nPrimitive Component Reference"
+            PinType=(PinCategory="object",PinSubCategoryObject=Class'/Script/Engine.PrimitiveComponent')
+            LinkedTo(0)=EdGraphPin'"MyProjectile:EventGraph.K2Node_Event_68.EdGraphPin_3665"'
+         End Object
+         Begin Object Name="EdGraphPin_3719"
+            PinName="Impulse"
+            PinToolTip="Impulse\nVector \n\nMagnitude and direction of impulse to apply."
+            PinType=(PinCategory="struct",PinSubCategoryObject=ScriptStruct'/Script/CoreUObject.Object:Vector')
+            DefaultValue="0, 0, 0"
+            AutogeneratedDefaultValue="0, 0, 0"
+            LinkedTo(0)=EdGraphPin'"MyProjectile:EventGraph.K2Node_CallFunction_10817.EdGraphPin_3743"'
+         End Object
+         Begin Object Name="EdGraphPin_3720"
+            PinName="Location"
+            PinToolTip="Location\nVector \n\nPoint in world space to apply impulse at."
+            PinType=(PinCategory="struct",PinSubCategoryObject=ScriptStruct'/Script/CoreUObject.Object:Vector')
+            DefaultValue="0, 0, 0"
+            AutogeneratedDefaultValue="0, 0, 0"
+            LinkedTo(0)=EdGraphPin'"MyProjectile:EventGraph.K2Node_CallFunction_9630.EdGraphPin_3735"'
+         End Object
+         Begin Object Name="EdGraphPin_3721"
+            PinName="BoneName"
+            PinToolTip="Bone Name\nName\n\nIf a SkeletalMeshComponent, name of bone to apply impulse to. \'None\' indicates root body."
+            PinType=(PinCategory="name")
+            DefaultValue="None"
+            AutogeneratedDefaultValue="None"
+         End Object
+         FunctionReference=(MemberParentClass=Class'/Script/Engine.PrimitiveComponent',MemberName="AddImpulseAtLocation")
+         Pins(0)=EdGraphPin'EdGraphPin_3716'
+         Pins(1)=EdGraphPin'EdGraphPin_3717'
+         Pins(2)=EdGraphPin'EdGraphPin_3718'
+         Pins(3)=EdGraphPin'EdGraphPin_3719'
+         Pins(4)=EdGraphPin'EdGraphPin_3720'
+         Pins(5)=EdGraphPin'EdGraphPin_3721'
+         NodePosX=-304
+         NodePosY=240
+         NodeGuid=6FE5D5E8BE4C70EA5FC0328AE2E85BB3
+      End Object
+      Begin Object Name="K2Node_CallFunction_10729"
+         Begin Object Name="EdGraphPin_3761"
+            PinName="self"
+            PinFriendlyName="Target"
+            PinToolTip="Target\nActor Reference"
+            PinType=(PinCategory="object",PinSubCategoryObject=Class'/Script/Engine.Actor')
+         End Object
+         Begin Object Name="EdGraphPin_3762"
+            PinName="ReturnValue"
+            PinToolTip="Return Value\nVector "
+            Direction=EGPD_Output
+            PinType=(PinCategory="struct",PinSubCategoryObject=ScriptStruct'/Script/CoreUObject.Object:Vector')
+            DefaultValue="0, 0, 0"
+            AutogeneratedDefaultValue="0, 0, 0"
+            LinkedTo(0)=EdGraphPin'"MyProjectile:EventGraph.K2Node_CallFunction_10817.EdGraphPin_3741"'
+         End Object
+         bIsPureFunc=True
+         bIsConstFunc=True
+         FunctionReference=(MemberName="GetVelocity",bSelfContext=True)
+         Pins(0)=EdGraphPin'EdGraphPin_3761'
+         Pins(1)=EdGraphPin'EdGraphPin_3762'
+         NodePosX=-864
+         NodePosY=512
+         NodeGuid=6B082910A84BA7066A0486BB203D0AC9
+      End Object
+      Begin Object Name="K2Node_CallFunction_10817"
+         Begin Object Name="EdGraphPin_3740"
+            PinName="self"
+            PinFriendlyName="Target"
+            PinToolTip="Target\nKismet Math Library Reference"
+            PinType=(PinCategory="object",PinSubCategoryObject=Class'/Script/Engine.KismetMathLibrary')
+            DefaultObject=Default__KismetMathLibrary
+            bHidden=True
+         End Object
+         Begin Object Name="EdGraphPin_3741"
+            PinName="A"
+            PinToolTip="A\nVector "
+            PinType=(PinCategory="struct",PinSubCategoryObject=ScriptStruct'/Script/CoreUObject.Object:Vector')
+            DefaultValue="0, 0, 0"
+            AutogeneratedDefaultValue="0, 0, 0"
+            LinkedTo(0)=EdGraphPin'"MyProjectile:EventGraph.K2Node_CallFunction_10729.EdGraphPin_3762"'
+         End Object
+         Begin Object Name="EdGraphPin_3742"
+            PinName="B"
+            PinToolTip="B\nFloat"
+            PinType=(PinCategory="float")
+            DefaultValue="100"
+            AutogeneratedDefaultValue="0.0"
+         End Object
+         Begin Object Name="EdGraphPin_3743"
+            PinName="ReturnValue"
+            PinToolTip="Return Value\nVector "
+            Direction=EGPD_Output
+            PinType=(PinCategory="struct",PinSubCategoryObject=ScriptStruct'/Script/CoreUObject.Object:Vector')
+            DefaultValue="0, 0, 0"
+            AutogeneratedDefaultValue="0, 0, 0"
+            LinkedTo(0)=EdGraphPin'"MyProjectile:EventGraph.K2Node_CallFunction_10693.EdGraphPin_3719"'
+         End Object
+         bIsPureFunc=True
+         FunctionReference=(MemberParentClass=Class'/Script/Engine.KismetMathLibrary',MemberName="Multiply_VectorFloat")
+         Pins(0)=EdGraphPin'EdGraphPin_3740'
+         Pins(1)=EdGraphPin'EdGraphPin_3741'
+         Pins(2)=EdGraphPin'EdGraphPin_3742'
+         Pins(3)=EdGraphPin'EdGraphPin_3743'
+         NodePosX=-592
+         NodePosY=512
+         NodeGuid=FCC72F4FDF4CBF2F9AEB87B98A3766C4
+      End Object
+      Begin Object Name="EdGraphNode_Comment_53"
+         NodePosX=-944
+         NodePosY=192
+         NodeWidth=1200
+         NodeHeight=560
+         NodeComment="Add physics impulse to any physics object we hit"
+         NodeGuid=E0133F54454244C888AADFA7BCF6FEFC
+      End Object
+      Begin Object Name="K2Node_Event_68"
+         Begin Object Name="EdGraphPin_3661"
+            PinName="OutputDelegate"
+            Direction=EGPD_Output
+            PinType=(PinCategory="delegate",PinSubCategoryObject=Function'/Script/Engine.Actor:ReceiveHit')
+         End Object
+         Begin Object Name="EdGraphPin_3662"
+            PinName="then"
+            Direction=EGPD_Output
+            PinType=(PinCategory="exec")
+            LinkedTo(0)=EdGraphPin'"MyProjectile:EventGraph.K2Node_IfThenElse_5.EdGraphPin_3776"'
+         End Object
+         Begin Object Name="EdGraphPin_3663"
+            PinName="MyComp"
+            PinToolTip="My Comp\nPrimitive Component Reference"
+            Direction=EGPD_Output
+            PinType=(PinCategory="object",PinSubCategoryObject=Class'/Script/Engine.PrimitiveComponent')
+         End Object
+         Begin Object Name="EdGraphPin_3664"
+            PinName="Other"
+            PinToolTip="Other\nActor Reference"
+            Direction=EGPD_Output
+            PinType=(PinCategory="object",PinSubCategoryObject=Class'/Script/Engine.Actor')
+         End Object
+         Begin Object Name="EdGraphPin_3665"
+            PinName="OtherComp"
+            PinToolTip="Other Comp\nPrimitive Component Reference"
+            Direction=EGPD_Output
+            PinType=(PinCategory="object",PinSubCategoryObject=Class'/Script/Engine.PrimitiveComponent')
+            LinkedTo(0)=EdGraphPin'"MyProjectile:EventGraph.K2Node_CallFunction_10693.EdGraphPin_3718"'
+            LinkedTo(1)=EdGraphPin'"MyProjectile:EventGraph.K2Node_CallFunction_2325.EdGraphPin_3767"'
+         End Object
+         Begin Object Name="EdGraphPin_3666"
+            PinName="bSelfMoved"
+            PinToolTip="Self Moved\nBoolean"
+            Direction=EGPD_Output
+            PinType=(PinCategory="bool")
+            DefaultValue="false"
+            AutogeneratedDefaultValue="false"
+         End Object
+         Begin Object Name="EdGraphPin_3667"
+            PinName="HitLocation"
+            PinToolTip="Hit Location\nVector "
+            Direction=EGPD_Output
+            PinType=(PinCategory="struct",PinSubCategoryObject=ScriptStruct'/Script/CoreUObject.Object:Vector')
+            DefaultValue="0, 0, 0"
+            AutogeneratedDefaultValue="0, 0, 0"
+         End Object
+         Begin Object Name="EdGraphPin_3668"
+            PinName="HitNormal"
+            PinToolTip="Hit Normal\nVector "
+            Direction=EGPD_Output
+            PinType=(PinCategory="struct",PinSubCategoryObject=ScriptStruct'/Script/CoreUObject.Object:Vector')
+            DefaultValue="0, 0, 0"
+            AutogeneratedDefaultValue="0, 0, 0"
+         End Object
+         Begin Object Name="EdGraphPin_3669"
+            PinName="NormalImpulse"
+            PinToolTip="Normal Impulse\nVector "
+            Direction=EGPD_Output
+            PinType=(PinCategory="struct",PinSubCategoryObject=ScriptStruct'/Script/CoreUObject.Object:Vector')
+            DefaultValue="0, 0, 0"
+            AutogeneratedDefaultValue="0, 0, 0"
+         End Object
+         Begin Object Name="EdGraphPin_3670"
+            PinName="Hit"
+            PinToolTip="Hit\nHit Result Structure (by ref)"
+            Direction=EGPD_Output
+            PinType=(PinCategory="struct",PinSubCategoryObject=ScriptStruct'/Script/Engine.EngineTypes:HitResult',bIsReference=True,bIsConst=True)
+         End Object
+         EventSignatureName="ReceiveHit"
+         EventSignatureClass=Class'/Script/Engine.Actor'
+         bOverrideFunction=True
+         Pins(0)=EdGraphPin'EdGraphPin_3661'
+         Pins(1)=EdGraphPin'EdGraphPin_3662'
+         Pins(2)=EdGraphPin'EdGraphPin_3663'
+         Pins(3)=EdGraphPin'EdGraphPin_3664'
+         Pins(4)=EdGraphPin'EdGraphPin_3665'
+         Pins(5)=EdGraphPin'EdGraphPin_3666'
+         Pins(6)=EdGraphPin'EdGraphPin_3667'
+         Pins(7)=EdGraphPin'EdGraphPin_3668'
+         Pins(8)=EdGraphPin'EdGraphPin_3669'
+         Pins(9)=EdGraphPin'EdGraphPin_3670'
+         NodePosX=-1120
+         NodePosY=224
+         NodeGuid=2C02BEA5AB4DD30E1B99CA914DFEA925
+      End Object
+      Begin Object Name="K2Node_CallFunction_2325"
+         Begin Object Name="EdGraphPin_3767"
+            PinName="self"
+            PinFriendlyName="Target"
+            PinToolTip="Target\nScene Component Reference"
+            PinType=(PinCategory="object",PinSubCategoryObject=Class'/Script/Engine.SceneComponent')
+            LinkedTo(0)=EdGraphPin'"MyProjectile:EventGraph.K2Node_Event_68.EdGraphPin_3665"'
+         End Object
+         Begin Object Name="EdGraphPin_3768"
+            PinName="BoneName"
+            PinToolTip="Bone Name\nName"
+            PinType=(PinCategory="name")
+            DefaultValue="None"
+            AutogeneratedDefaultValue="None"
+         End Object
+         Begin Object Name="EdGraphPin_3769"
+            PinName="ReturnValue"
+            PinToolTip="Return Value\nBoolean"
+            Direction=EGPD_Output
+            PinType=(PinCategory="bool")
+            DefaultValue="false"
+            AutogeneratedDefaultValue="false"
+            LinkedTo(0)=EdGraphPin'"MyProjectile:EventGraph.K2Node_IfThenElse_5.EdGraphPin_3777"'
+         End Object
+         bIsPureFunc=True
+         bIsConstFunc=True
+         FunctionReference=(MemberParentClass=Class'/Script/Engine.SceneComponent',MemberName="IsSimulatingPhysics")
+         Pins(0)=EdGraphPin'EdGraphPin_3767'
+         Pins(1)=EdGraphPin'EdGraphPin_3768'
+         Pins(2)=EdGraphPin'EdGraphPin_3769'
+         NodePosX=-896
+         NodePosY=352
+         NodeGuid=60CB0C45794375700D0DD7AFEC0810F7
+      End Object
+      Begin Object Name="K2Node_IfThenElse_5"
+         Begin Object Name="EdGraphPin_3776"
+            PinName="execute"
+            PinType=(PinCategory="exec")
+            LinkedTo(0)=EdGraphPin'"MyProjectile:EventGraph.K2Node_Event_68.EdGraphPin_3662"'
+         End Object
+         Begin Object Name="EdGraphPin_3777"
+            PinName="Condition"
+            PinType=(PinCategory="bool")
+            DefaultValue="true"
+            AutogeneratedDefaultValue="true"
+            LinkedTo(0)=EdGraphPin'"MyProjectile:EventGraph.K2Node_CallFunction_2325.EdGraphPin_3769"'
+         End Object
+         Begin Object Name="EdGraphPin_3778"
+            PinName="then"
+            PinFriendlyName="true"
+            Direction=EGPD_Output
+            PinType=(PinCategory="exec")
+            LinkedTo(0)=EdGraphPin'"MyProjectile:EventGraph.K2Node_CallFunction_10693.EdGraphPin_3716"'
+         End Object
+         Begin Object Name="EdGraphPin_3779"
+            PinName="else"
+            PinFriendlyName="false"
+            Direction=EGPD_Output
+            PinType=(PinCategory="exec")
+         End Object
+         Pins(0)=EdGraphPin'EdGraphPin_3776'
+         Pins(1)=EdGraphPin'EdGraphPin_3777'
+         Pins(2)=EdGraphPin'EdGraphPin_3778'
+         Pins(3)=EdGraphPin'EdGraphPin_3779'
+         NodePosX=-576
+         NodePosY=256
+         NodeGuid=0FF3A090EC496FA4C830648616A06749
+      End Object
+      Schema=Class'/Script/BlueprintGraph.EdGraphSchema_K2'
+      Nodes(0)=K2Node_CallFunction'K2Node_CallFunction_8098'
+      Nodes(1)=K2Node_CallFunction'K2Node_CallFunction_9630'
+      Nodes(2)=K2Node_CallFunction'K2Node_CallFunction_10693'
+      Nodes(3)=K2Node_CallFunction'K2Node_CallFunction_10729'
+      Nodes(4)=K2Node_CallFunction'K2Node_CallFunction_10817'
+      Nodes(5)=EdGraphNode_Comment'EdGraphNode_Comment_53'
+      Nodes(6)=K2Node_Event'K2Node_Event_68'
+      Nodes(7)=K2Node_CallFunction'K2Node_CallFunction_2325'
+      Nodes(8)=K2Node_IfThenElse'K2Node_IfThenElse_5'
+      bAllowDeletion=False
+      GraphGuid=FDA12CD242D2BDF5500CDF83EF4EE084
+   End Object
+   Begin Object Name="UserConstructionScript"
+      Begin Object Name="K2Node_FunctionEntry_680"
+         Begin Object Name="EdGraphPin_3658"
+            PinName="then"
+            Direction=EGPD_Output
+            PinType=(PinCategory="exec")
+         End Object
+         SignatureClass=Class'/Script/Engine.Actor'
+         SignatureName="UserConstructionScript"
+         Pins(0)=EdGraphPin'EdGraphPin_3658'
+         NodeGuid=31ACC2828A4F41A1306C618E736046E8
+      End Object
+      Schema=Class'/Script/BlueprintGraph.EdGraphSchema_K2'
+      Nodes(0)=K2Node_FunctionEntry'K2Node_FunctionEntry_680'
+      bAllowDeletion=False
+      GraphGuid=B292FE0B4F1815B2A24A448577237C9C
+   End Object
+   Begin Object Name="SceneThumbnailInfo_5"
+   End Object
+   Begin Object Name="SceneComponent_0"
+   End Object
+   Begin Object Name="ReceiveHit"
+      Begin Object Name="K2Node_FunctionEntry_75"
+         Begin Object Name="EdGraphPin_3865"
+            PinName="then"
+            Direction=EGPD_Output
+            PinType=(PinCategory="exec")
+            LinkedTo(0)=EdGraphPin'"MyProjectile:ReceiveHit.K2Node_VariableSet_23.EdGraphPin_3874"'
+         End Object
+         Begin Object Name="EdGraphPin_3866"
+            PinName="MyComp"
+            PinToolTip="My Comp\nPrimitive Component Reference"
+            Direction=EGPD_Output
+            PinType=(PinCategory="object",PinSubCategoryObject=Class'/Script/Engine.PrimitiveComponent')
+            LinkedTo(0)=EdGraphPin'"MyProjectile:ReceiveHit.K2Node_VariableSet_23.EdGraphPin_3876"'
+         End Object
+         Begin Object Name="EdGraphPin_3867"
+            PinName="Other"
+            PinToolTip="Other\nActor Reference"
+            Direction=EGPD_Output
+            PinType=(PinCategory="object",PinSubCategoryObject=Class'/Script/Engine.Actor')
+            LinkedTo(0)=EdGraphPin'"MyProjectile:ReceiveHit.K2Node_VariableSet_23.EdGraphPin_3877"'
+         End Object
+         Begin Object Name="EdGraphPin_3868"
+            PinName="OtherComp"
+            PinToolTip="Other Comp\nPrimitive Component Reference"
+            Direction=EGPD_Output
+            PinType=(PinCategory="object",PinSubCategoryObject=Class'/Script/Engine.PrimitiveComponent')
+            LinkedTo(0)=EdGraphPin'"MyProjectile:ReceiveHit.K2Node_VariableSet_23.EdGraphPin_3878"'
+         End Object
+         Begin Object Name="EdGraphPin_3869"
+            PinName="bSelfMoved"
+            PinToolTip="Self Moved\nBoolean"
+            Direction=EGPD_Output
+            PinType=(PinCategory="bool")
+            DefaultValue="false"
+            AutogeneratedDefaultValue="false"
+            LinkedTo(0)=EdGraphPin'"MyProjectile:ReceiveHit.K2Node_VariableSet_23.EdGraphPin_3879"'
+         End Object
+         Begin Object Name="EdGraphPin_3870"
+            PinName="HitLocation"
+            PinToolTip="Hit Location\nVector "
+            Direction=EGPD_Output
+            PinType=(PinCategory="struct",PinSubCategoryObject=ScriptStruct'/Script/CoreUObject.Object:Vector')
+            DefaultValue="0, 0, 0"
+            AutogeneratedDefaultValue="0, 0, 0"
+            LinkedTo(0)=EdGraphPin'"MyProjectile:ReceiveHit.K2Node_VariableSet_23.EdGraphPin_3880"'
+         End Object
+         Begin Object Name="EdGraphPin_3871"
+            PinName="HitNormal"
+            PinToolTip="Hit Normal\nVector "
+            Direction=EGPD_Output
+            PinType=(PinCategory="struct",PinSubCategoryObject=ScriptStruct'/Script/CoreUObject.Object:Vector')
+            DefaultValue="0, 0, 0"
+            AutogeneratedDefaultValue="0, 0, 0"
+            LinkedTo(0)=EdGraphPin'"MyProjectile:ReceiveHit.K2Node_VariableSet_23.EdGraphPin_3881"'
+         End Object
+         Begin Object Name="EdGraphPin_3872"
+            PinName="NormalImpulse"
+            PinToolTip="Normal Impulse\nVector "
+            Direction=EGPD_Output
+            PinType=(PinCategory="struct",PinSubCategoryObject=ScriptStruct'/Script/CoreUObject.Object:Vector')
+            DefaultValue="0, 0, 0"
+            AutogeneratedDefaultValue="0, 0, 0"
+            LinkedTo(0)=EdGraphPin'"MyProjectile:ReceiveHit.K2Node_VariableSet_23.EdGraphPin_3882"'
+         End Object
+         Begin Object Name="EdGraphPin_3873"
+            PinName="Hit"
+            PinToolTip="Hit\nHit Result Structure (by ref)"
+            Direction=EGPD_Output
+            PinType=(PinCategory="struct",PinSubCategoryObject=ScriptStruct'/Script/Engine.EngineTypes:HitResult',bIsReference=True,bIsConst=True)
+            LinkedTo(0)=EdGraphPin'"MyProjectile:ReceiveHit.K2Node_VariableSet_23.EdGraphPin_3883"'
+         End Object
+         CustomGeneratedFunctionName="ReceiveHit"
+         SignatureClass=Class'/Script/Engine.Actor'
+         SignatureName="ReceiveHit"
+         Pins(0)=EdGraphPin'EdGraphPin_3865'
+         Pins(1)=EdGraphPin'EdGraphPin_3866'
+         Pins(2)=EdGraphPin'EdGraphPin_3867'
+         Pins(3)=EdGraphPin'EdGraphPin_3868'
+         Pins(4)=EdGraphPin'EdGraphPin_3869'
+         Pins(5)=EdGraphPin'EdGraphPin_3870'
+         Pins(6)=EdGraphPin'EdGraphPin_3871'
+         Pins(7)=EdGraphPin'EdGraphPin_3872'
+         Pins(8)=EdGraphPin'EdGraphPin_3873'
+         NodePosX=-200
+         NodePosY=-2000
+         NodeGuid=E4098A29114E2DC2EDF54AB92C38A946
+      End Object
+      Begin Object Name="K2Node_VariableSet_23"
+         Begin Object Name="EdGraphPin_3874"
+            PinName="execute"
+            PinType=(PinCategory="exec")
+            LinkedTo(0)=EdGraphPin'"MyProjectile:ReceiveHit.K2Node_FunctionEntry_75.EdGraphPin_3865"'
+         End Object
+         Begin Object Name="EdGraphPin_3875"
+            PinName="then"
+            Direction=EGPD_Output
+            PinType=(PinCategory="exec")
+            LinkedTo(0)=EdGraphPin'"MyProjectile:ReceiveHit.K2Node_CallFunction_147.EdGraphPin_3884"'
+         End Object
+         Begin Object Name="EdGraphPin_3876"
+            PinName="K2Node_Event_MyComp"
+            PinType=(PinCategory="object",PinSubCategoryObject=Class'/Script/Engine.PrimitiveComponent')
+            LinkedTo(0)=EdGraphPin'"MyProjectile:ReceiveHit.K2Node_FunctionEntry_75.EdGraphPin_3866"'
+         End Object
+         Begin Object Name="EdGraphPin_3877"
+            PinName="K2Node_Event_Other"
+            PinType=(PinCategory="object",PinSubCategoryObject=Class'/Script/Engine.Actor')
+            LinkedTo(0)=EdGraphPin'"MyProjectile:ReceiveHit.K2Node_FunctionEntry_75.EdGraphPin_3867"'
+         End Object
+         Begin Object Name="EdGraphPin_3878"
+            PinName="K2Node_Event_OtherComp"
+            PinType=(PinCategory="object",PinSubCategoryObject=Class'/Script/Engine.PrimitiveComponent')
+            LinkedTo(0)=EdGraphPin'"MyProjectile:ReceiveHit.K2Node_FunctionEntry_75.EdGraphPin_3868"'
+         End Object
+         Begin Object Name="EdGraphPin_3879"
+            PinName="K2Node_Event_bSelfMoved"
+            PinType=(PinCategory="bool")
+            LinkedTo(0)=EdGraphPin'"MyProjectile:ReceiveHit.K2Node_FunctionEntry_75.EdGraphPin_3869"'
+         End Object
+         Begin Object Name="EdGraphPin_3880"
+            PinName="K2Node_Event_HitLocation"
+            PinType=(PinCategory="struct",PinSubCategoryObject=ScriptStruct'/Script/CoreUObject.Object:Vector')
+            LinkedTo(0)=EdGraphPin'"MyProjectile:ReceiveHit.K2Node_FunctionEntry_75.EdGraphPin_3870"'
+         End Object
+         Begin Object Name="EdGraphPin_3881"
+            PinName="K2Node_Event_HitNormal"
+            PinType=(PinCategory="struct",PinSubCategoryObject=ScriptStruct'/Script/CoreUObject.Object:Vector')
+            LinkedTo(0)=EdGraphPin'"MyProjectile:ReceiveHit.K2Node_FunctionEntry_75.EdGraphPin_3871"'
+         End Object
+         Begin Object Name="EdGraphPin_3882"
+            PinName="K2Node_Event_NormalImpulse"
+            PinType=(PinCategory="struct",PinSubCategoryObject=ScriptStruct'/Script/CoreUObject.Object:Vector')
+            LinkedTo(0)=EdGraphPin'"MyProjectile:ReceiveHit.K2Node_FunctionEntry_75.EdGraphPin_3872"'
+         End Object
+         Begin Object Name="EdGraphPin_3883"
+            PinName="K2Node_Event_Hit"
+            PinType=(PinCategory="struct",PinSubCategoryObject=ScriptStruct'/Script/Engine.EngineTypes:HitResult',bIsReference=True)
+            LinkedTo(0)=EdGraphPin'"MyProjectile:ReceiveHit.K2Node_FunctionEntry_75.EdGraphPin_3873"'
+         End Object
+         VariableReference=(bSelfContext=True)
+         Pins(0)=EdGraphPin'EdGraphPin_3874'
+         Pins(1)=EdGraphPin'EdGraphPin_3875'
+         Pins(2)=EdGraphPin'EdGraphPin_3876'
+         Pins(3)=EdGraphPin'EdGraphPin_3877'
+         Pins(4)=EdGraphPin'EdGraphPin_3878'
+         Pins(5)=EdGraphPin'EdGraphPin_3879'
+         Pins(6)=EdGraphPin'EdGraphPin_3880'
+         Pins(7)=EdGraphPin'EdGraphPin_3881'
+         Pins(8)=EdGraphPin'EdGraphPin_3882'
+         Pins(9)=EdGraphPin'EdGraphPin_3883'
+         NodePosX=-1520
+         NodePosY=-2000
+         NodeGuid=979A60272948CB9588764BB97AE6E7E6
+      End Object
+      Begin Object Name="K2Node_CallFunction_147"
+         Begin Object Name="EdGraphPin_3884"
+            PinName="execute"
+            PinType=(PinCategory="exec")
+            LinkedTo(0)=EdGraphPin'"MyProjectile:ReceiveHit.K2Node_VariableSet_23.EdGraphPin_3875"'
+         End Object
+         Begin Object Name="EdGraphPin_3885"
+            PinName="then"
+            Direction=EGPD_Output
+            PinType=(PinCategory="exec")
+         End Object
+         Begin Object Name="EdGraphPin_3886"
+            PinName="self"
+            PinFriendlyName="Target"
+            PinToolTip="Target\nObject Reference"
+            PinType=(PinCategory="object",PinSubCategory="self",PinSubCategoryObject=BlueprintGeneratedClass'"SKEL_MyProjectile_C"')
+         End Object
+         Begin Object Name="EdGraphPin_3887"
+            PinName="EntryPoint"
+            PinToolTip="Entry Point\nInteger\n\nThe entry point to start code execution at."
+            PinType=(PinCategory="int")
+            DefaultValue="0"
+            AutogeneratedDefaultValue="0"
+         End Object
+         FunctionReference=(MemberName="ExecuteUbergraph_MyProjectile",bSelfContext=True)
+         Pins(0)=EdGraphPin'EdGraphPin_3884'
+         Pins(1)=EdGraphPin'EdGraphPin_3885'
+         Pins(2)=EdGraphPin'EdGraphPin_3886'
+         Pins(3)=EdGraphPin'EdGraphPin_3887'
+         NodePosX=300
+         NodePosY=-2000
+         NodeGuid=7114DADEEC4FF63BABFE449CE2CE18B2
+      End Object
+      Schema=Class'/Script/BlueprintGraph.EdGraphSchema_K2'
+      Nodes(0)=K2Node_FunctionEntry'K2Node_FunctionEntry_75'
+      Nodes(1)=K2Node_VariableSet'K2Node_VariableSet_23'
+      Nodes(2)=K2Node_CallFunction'K2Node_CallFunction_147'
+      GraphGuid=6130510BEB4FD48348EB018857F3ED12
+   End Object
+   ParentClass=Class'/Script/Engine.Actor'
+   BlueprintDescription="Projectile fired by player that pushes physics objects"
+   SimpleConstructionScript=SimpleConstructionScript'SimpleConstructionScript_0'
+   UbergraphPages(0)=EdGraph'EventGraph'
+   FunctionGraphs(0)=EdGraph'UserConstructionScript'
+   BlueprintSystemVersion=2
+   LastEditedDocuments(0)=(EditedObject=EdGraph'UserConstructionScript',SavedZoomAmount=1.000000)
+   LastEditedDocuments(1)=(EditedObject=EdGraph'EventGraph',SavedViewOffset=(X=-1302.385620,Y=25.857105),SavedZoomAmount=0.875000)
+   ThumbnailInfo=SceneThumbnailInfo'SceneThumbnailInfo_5'
+   GeneratedClass=BlueprintGeneratedClass'MyProjectile_C'
+   bLegacyNeedToPurgeSkelRefs=False
+   bLegacyGeneratedClassIsAuthoritative=True
+   BlueprintGuid=9D826EA8822396E45AA05408350F8888
+End Object

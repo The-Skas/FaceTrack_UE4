@@ -1,0 +1,19 @@
+{
+	"FileVersion": 3,
+	"EngineAssociation": "4.5",
+	"Category": "",
+	"Description": "",
+	"Modules": [
+		{
+			"Name": "MyProject7",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "UE4OSCPlugin",
+			"Enabled": false
+		}
+	]
+}
