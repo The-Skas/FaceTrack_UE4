@@ -9,9 +9,9 @@ server = OSCServer( ("localhost", 8338) )
 server.timeout = 0
 run = True
 
-# Client
-# client = OSCClient()
-# client.connect(('127.0.0.1', 8339))
+
+client = OSCClient()
+client.connect(('127.0.0.1', 8339))
 # Other
 
 dict_gestures = {}
@@ -19,8 +19,6 @@ index=  {"id":0, "expression":1, "gesture_mouth_width":2, "gesture_mouth_height"
         "gesture_eyebrow_left":4, "gesture_eyebrow_right":5,"gesture_eye_left":6, 
         "gesture_eye_right": 7, "gesture_jaw":8,"gesture_nostrils":9,
         "pose_scale": 10}
-current_expression = argv[1]
-
 # this method of reporting timeouts only works by convention
 # that before calling handle_request() field .timed_out is 
 # set to False
@@ -47,7 +45,6 @@ def read_csv():
     global dict_gestures
     pdb.set_trace()
     dict_gestures["id"] = next_id
-    dict_gestures["expression"] = current_expression
 
 
 def user_callback(path, tags, args, source):
@@ -58,15 +55,13 @@ def user_callback(path, tags, args, source):
     # information
     column_name = path.split("/")[1::]
 
-    # We join the column name into a single string.
-    column_name = "_".join(column_name)
-    if(column_name == "found"):
-        write_gestures_to_csv()
-    else:
-        # Doesnt handle arrays
-        global dict_gestures
-        dict_gestures[column_name] = args[0]
+    print path,args
 
+    oscmsg = OSCMessage()
+    oscmsg.setAddress(path)
+    oscmsg.append(args)
+    client.send(oscmsg)
+ 
     # tags will contain 'fff'
     # args is a OSCMessage with data
     # source is where the message came from (in case you need to reply)
@@ -76,28 +71,7 @@ def quit_callback(path, tags, args, source):
     global run
     run = False
 
-def write_gestures_to_csv():
-    global dict_gestures
 
-    # We make sure dictionary gestures contains elements.
-    if(dict_gestures.has_key("gesture_nostrils")):
-        fd = open('face_gestures.csv','a')
-        final_list = [1] * len(index)
-        for key, value in dict_gestures.iteritems():
-            index_pos = index.get(key,-1)
-            if(index_pos != -1):
-                final_list[index_pos] = value
-
-
-        row = re.sub('[\[\]]', '', str(final_list))
-        fd.write(row +"\n")
-        fd.close()
-
-        old_id = dict_gestures["id"]
-        dict_gestures.clear()
-        dict_gestures["id"] = int(old_id) + 1
-
-        dict_gestures["expression"] = current_expression
 
 
 # user script that's called by the game engine every frame
