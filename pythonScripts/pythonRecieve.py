@@ -2,6 +2,8 @@
 from OSC import OSCServer, OSCClient, OSCMessage
 from sys import argv
 from time import sleep
+from knn import buildKNN
+
 import pdb
 import re
 from collections import OrderedDict
@@ -9,13 +11,14 @@ server = OSCServer( ("localhost", 8338) )
 server.timeout = 0
 run = True
 
+KNN = None
 
 client = OSCClient()
 client.connect(('127.0.0.1', 8339))
 # Other
 
 dict_gestures = {}
-index=  {"id":0, "expression":1, "gesture_mouth_width":2, "gesture_mouth_height": 3, 
+column_indices=  {"id":0, "expression":1, "gesture_mouth_width":2, "gesture_mouth_height": 3, 
         "gesture_eyebrow_left":4, "gesture_eyebrow_right":5,"gesture_eye_left":6, 
         "gesture_eye_right": 7, "gesture_jaw":8,"gesture_nostrils":9,
         "pose_scale": 10}
@@ -55,13 +58,22 @@ def user_callback(path, tags, args, source):
     # information
     column_name = path.split("/")[1::]
 
-    print path,args
+    # print path,args
 
     oscmsg = OSCMessage()
     oscmsg.setAddress(path)
     oscmsg.append(args)
     client.send(oscmsg)
- 
+    
+
+    # We join the column name into a single string.
+    column_name = "_".join(column_name)
+    if(column_name == "found" and args[0] == 1):
+        predict_expression()
+    else:
+        # Doesnt handle arrays
+        global dict_gestures
+        dict_gestures[column_name] = args[0]
     # tags will contain 'fff'
     # args is a OSCMessage with data
     # source is where the message came from (in case you need to reply)
@@ -71,8 +83,26 @@ def quit_callback(path, tags, args, source):
     global run
     run = False
 
-
-
+def predict_expression():
+    global dict_gestures
+    # We make sure dictionary gestures contains elements.
+    if(dict_gestures.has_key("gesture_nostrils")):
+        fd = open('face_gestures.csv','a')
+        final_list = [1] * len(column_indices)
+        for key, value in dict_gestures.iteritems():
+            index_pos = column_indices.get(key,-1)
+            if(index_pos != -1):
+                final_list[index_pos] = value
+        global KNN
+        # Returns an array
+        predicted_expression = KNN.predict(final_list[2::])[0]
+        predicted_expression = predicted_expression.strip().strip("'")
+        # Send OSC Message
+        oscmsg = OSCMessage()
+        oscmsg.setAddress("/expression")
+        oscmsg.append(predicted_expression)
+        print "/expression",predicted_expression
+        client.send(oscmsg)
 
 # user script that's called by the game engine every frame
 def each_frame():
@@ -98,6 +128,8 @@ def main():
     server.addMsgHandler( "/gesture/nostrils", user_callback)
     # simulate a "game engine"
     read_csv()
+    global KNN
+    KNN = buildKNN("face_gestures.csv")
     while run:
         # do the game stuff:
         # call user script

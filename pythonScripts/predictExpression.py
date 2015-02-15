@@ -17,7 +17,7 @@ run = True
 # Other
 
 dict_gestures = {}
-index=  {"id":0, "expression":1, "gesture_mouth_width":2, "gesture_mouth_height": 3, 
+column_indices=  {"id":0, "expression":1, "gesture_mouth_width":2, "gesture_mouth_height": 3, 
         "gesture_eyebrow_left":4, "gesture_eyebrow_right":5,"gesture_eye_left":6, 
         "gesture_eye_right": 7, "gesture_jaw":8,"gesture_nostrils":9,
         "pose_scale": 10}
@@ -62,7 +62,7 @@ def user_callback(path, tags, args, source):
 
     # We join the column name into a single string.
     column_name = "_".join(column_name)
-    if(column_name == "found"):
+    if(column_name == "found" and args[0] == 1):
         predict_expression()
     else:
         # Doesnt handle arrays
@@ -84,9 +84,9 @@ def write_gestures_to_csv():
     # We make sure dictionary gestures contains elements.
     if(dict_gestures.has_key("gesture_nostrils")):
         fd = open('face_gestures.csv','a')
-        final_list = [1] * len(index)
+        final_list = [1] * len(column_indices)
         for key, value in dict_gestures.iteritems():
-            index_pos = index.get(key,-1)
+            index_pos = column_indices.get(key,-1)
             if(index_pos != -1):
                 final_list[index_pos] = value
 
@@ -103,13 +103,12 @@ def write_gestures_to_csv():
 
 def predict_expression():
     global dict_gestures
-
     # We make sure dictionary gestures contains elements.
     if(dict_gestures.has_key("gesture_nostrils")):
         fd = open('face_gestures.csv','a')
-        final_list = [1] * len(index)
+        final_list = [1] * len(column_indices)
         for key, value in dict_gestures.iteritems():
-            index_pos = index.get(key,-1)
+            index_pos = column_indices.get(key,-1)
             if(index_pos != -1):
                 final_list[index_pos] = value
         global KNN

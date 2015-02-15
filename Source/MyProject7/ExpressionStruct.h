@@ -20,4 +20,3 @@ class MYPROJECT7_API UExpressionStruct : public UUserDefinedStruct
 	
 	
 };
-FRotator
