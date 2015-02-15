@@ -3,6 +3,7 @@ from OSC import OSCServer, OSCClient, OSCMessage
 from sys import argv
 from time import sleep
 from knn import buildKNN
+import numpy as np
 import pdb
 import re
 from collections import OrderedDict
@@ -111,9 +112,8 @@ def predict_expression():
             index_pos = index.get(key,-1)
             if(index_pos != -1):
                 final_list[index_pos] = value
-
         global KNN
-        print "--------------"
+        print KNN.predict(final_list[2::])
 # user script that's called by the game engine every frame
 def each_frame():
     # clear timed_out flag

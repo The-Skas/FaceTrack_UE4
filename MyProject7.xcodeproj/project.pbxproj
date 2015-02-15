@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		54ED0A3606AA532E4419FFAA /* MyClassTemp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D2A29D200257CBB89990085E /* MyClassTemp.cpp */; };
 		5AC7397B1A7A5E82008F9270 /* OscFunctionLibrary.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5AC739611A7A5E82008F9270 /* OscFunctionLibrary.cpp */; };
 		5AC7397C1A7A5E82008F9270 /* OscOutboundPacketStream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5AC739671A7A5E82008F9270 /* OscOutboundPacketStream.cpp */; };
 		5AC7397D1A7A5E82008F9270 /* OscReceivedElements.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5AC739691A7A5E82008F9270 /* OscReceivedElements.cpp */; };
@@ -18,7 +17,8 @@
 		5AC739821A7A5E82008F9270 /* OscReceiverActor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5AC739751A7A5E82008F9270 /* OscReceiverActor.cpp */; };
 		5AC739831A7A5E82008F9270 /* OscReceiverComponent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5AC739771A7A5E82008F9270 /* OscReceiverComponent.cpp */; };
 		5AC739841A7A5E82008F9270 /* OscReceiverInterface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5AC739791A7A5E82008F9270 /* OscReceiverInterface.cpp */; };
-		9DB3C79F76F994FE0A529084 /* MyProject7.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2550F952F75F829C8282D79A /* MyProject7.cpp */; };
+		5ACA87631A90D4F000838B42 /* MyClassTemp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5ACA875D1A90D4F000838B42 /* MyClassTemp.cpp */; };
+		5ACA87641A90D4F000838B42 /* MyProject7.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5ACA87601A90D4F000838B42 /* MyProject7.cpp */; };
 		A58817B4BFE3EC885169C687 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71691D23B02BEEDBB5650509 /* XCTest.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,8 +34,6 @@
 
 /* Begin PBXFileReference section */
 		15A34CDBDF6AF17442A5BC38 /* MyProject7.uproject */ = {isa = PBXFileReference; lastKnownFileType = file.text; path = MyProject7.uproject; sourceTree = SOURCE_ROOT; };
-		2550F952F75F829C8282D79A /* MyProject7.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = MyProject7.cpp; path = Source/MyProject7/MyProject7.cpp; sourceTree = SOURCE_ROOT; };
-		3F423ED8C0523730E2E120DB /* MyClassTemp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MyClassTemp.h; path = Source/MyProject7/MyClassTemp.h; sourceTree = SOURCE_ROOT; };
 		5AC739571A7A5E82008F9270 /* OSC.uplugin */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OSC.uplugin; sourceTree = "<group>"; };
 		5AC739591A7A5E82008F9270 /* Icon128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon128.png; sourceTree = "<group>"; };
 		5AC7395C1A7A5E82008F9270 /* OSC.Build.cs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OSC.Build.cs; sourceTree = "<group>"; };
@@ -64,16 +62,17 @@
 		5AC739781A7A5E82008F9270 /* OscReceiverComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OscReceiverComponent.h; sourceTree = "<group>"; };
 		5AC739791A7A5E82008F9270 /* OscReceiverInterface.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OscReceiverInterface.cpp; sourceTree = "<group>"; };
 		5AC7397A1A7A5E82008F9270 /* OscReceiverInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OscReceiverInterface.h; sourceTree = "<group>"; };
-		6B10EF6C58AD72A2BFBC0026 /* MyProject7.Build.cs */ = {isa = PBXFileReference; lastKnownFileType = file.text; name = MyProject7.Build.cs; path = Source/MyProject7/MyProject7.Build.cs; sourceTree = SOURCE_ROOT; };
+		5ACA875C1A90D4F000838B42 /* MorphTargetStruct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MorphTargetStruct.h; sourceTree = "<group>"; };
+		5ACA875D1A90D4F000838B42 /* MyClassTemp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MyClassTemp.cpp; sourceTree = "<group>"; };
+		5ACA875E1A90D4F000838B42 /* MyClassTemp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyClassTemp.h; sourceTree = "<group>"; };
+		5ACA875F1A90D4F000838B42 /* MyProject7.Build.cs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MyProject7.Build.cs; sourceTree = "<group>"; };
+		5ACA87601A90D4F000838B42 /* MyProject7.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MyProject7.cpp; sourceTree = "<group>"; };
+		5ACA87611A90D4F000838B42 /* MyProject7.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyProject7.h; sourceTree = "<group>"; };
 		71691D23B02BEEDBB5650509 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		74E195EBBEEA5EFC93AC001F /* libUE4XcodeHelper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libUE4XcodeHelper.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F2433E3DDF5735319F1FD5F /* UE4CmdLineRun.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UE4CmdLineRun.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5628470F317DFBC0AC94CF2 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
-		B64C3FA889BE2718F09D3BB4 /* MyProject7.Target.cs */ = {isa = PBXFileReference; lastKnownFileType = file.text; name = MyProject7.Target.cs; path = Source/MyProject7.Target.cs; sourceTree = SOURCE_ROOT; };
 		C12804AC350EC6F717FBAA24 /* MyProject7.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyProject7.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D2A29D200257CBB89990085E /* MyClassTemp.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = MyClassTemp.cpp; path = Source/MyProject7/MyClassTemp.cpp; sourceTree = SOURCE_ROOT; };
-		E87B71283A2450FDB3AFA02A /* MyProject7Editor.Target.cs */ = {isa = PBXFileReference; lastKnownFileType = file.text; name = MyProject7Editor.Target.cs; path = Source/MyProject7Editor.Target.cs; sourceTree = SOURCE_ROOT; };
-		E97872DDC3C98FCF8D6C94BD /* MyProject7.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MyProject7.h; path = Source/MyProject7/MyProject7.h; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,16 +101,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		29FC17BCBC00AB4007D219E1 /* Source */ = {
-			isa = PBXGroup;
-			children = (
-				6625E8CDC53215948FA96C65 /* MyProject7 */,
-				B64C3FA889BE2718F09D3BB4 /* MyProject7.Target.cs */,
-				E87B71283A2450FDB3AFA02A /* MyProject7Editor.Target.cs */,
-			);
-			path = Source;
-			sourceTree = "<group>";
-		};
 		5AC7392B1A7A5C6A008F9270 /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
@@ -220,14 +209,15 @@
 			path = Receive;
 			sourceTree = "<group>";
 		};
-		6625E8CDC53215948FA96C65 /* MyProject7 */ = {
+		5ACA875A1A90D4F000838B42 /* MyProject7 */ = {
 			isa = PBXGroup;
 			children = (
-				D2A29D200257CBB89990085E /* MyClassTemp.cpp */,
-				3F423ED8C0523730E2E120DB /* MyClassTemp.h */,
-				6B10EF6C58AD72A2BFBC0026 /* MyProject7.Build.cs */,
-				2550F952F75F829C8282D79A /* MyProject7.cpp */,
-				E97872DDC3C98FCF8D6C94BD /* MyProject7.h */,
+				5ACA875C1A90D4F000838B42 /* MorphTargetStruct.h */,
+				5ACA875D1A90D4F000838B42 /* MyClassTemp.cpp */,
+				5ACA875E1A90D4F000838B42 /* MyClassTemp.h */,
+				5ACA875F1A90D4F000838B42 /* MyProject7.Build.cs */,
+				5ACA87601A90D4F000838B42 /* MyProject7.cpp */,
+				5ACA87611A90D4F000838B42 /* MyProject7.h */,
 			);
 			name = MyProject7;
 			path = Source/MyProject7;
@@ -255,8 +245,8 @@
 		F4A6E015B1757A6580449ADE = {
 			isa = PBXGroup;
 			children = (
+				5ACA875A1A90D4F000838B42 /* MyProject7 */,
 				5AC7392B1A7A5C6A008F9270 /* Plugins */,
-				29FC17BCBC00AB4007D219E1 /* Source */,
 				7CC7A084A4947195A832482C /* Products */,
 				C07DCF5AAAB848C47CD221DD /* Frameworks */,
 				15A34CDBDF6AF17442A5BC38 /* MyProject7.uproject */,
@@ -431,11 +421,11 @@
 				5AC7397C1A7A5E82008F9270 /* OscOutboundPacketStream.cpp in Sources */,
 				5AC7397D1A7A5E82008F9270 /* OscReceivedElements.cpp in Sources */,
 				5AC7397E1A7A5E82008F9270 /* OscTypes.cpp in Sources */,
-				54ED0A3606AA532E4419FFAA /* MyClassTemp.cpp in Sources */,
 				5AC739801A7A5E82008F9270 /* OscSettings.cpp in Sources */,
-				9DB3C79F76F994FE0A529084 /* MyProject7.cpp in Sources */,
 				5AC739811A7A5E82008F9270 /* OscDispatcher.cpp in Sources */,
+				5ACA87641A90D4F000838B42 /* MyProject7.cpp in Sources */,
 				5AC739821A7A5E82008F9270 /* OscReceiverActor.cpp in Sources */,
+				5ACA87631A90D4F000838B42 /* MyClassTemp.cpp in Sources */,
 				5AC739831A7A5E82008F9270 /* OscReceiverComponent.cpp in Sources */,
 				5AC7397B1A7A5E82008F9270 /* OscFunctionLibrary.cpp in Sources */,
 				5AC7397F1A7A5E82008F9270 /* OscModule.cpp in Sources */,
