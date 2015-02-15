@@ -1,18 +1,23 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 #pragma once
-#include "MyProject7.h"
+
+#include "Engine/UserDefinedStruct.h"
+#include "MorphTargetStruct.generated.h"
+
 /**
  * 
  */
-USTRUCT()
-struct FMorphTargetStruct
+UCLASS(BlueprintType)
+class MYPROJECT7_API UMorphTargetStruct : public UUserDefinedStruct
 {
-  GENERATED_USTRUCT_BODY()
-  UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Morph Target");
-  FString morphTarget;
+	GENERATED_UCLASS_BODY()
+  UPROPERTY(EditAnywhere,BlueprintReadWrite, Category = morphTarget)
+  FName morphTarget;
   
-  UPROPERT(EditAnywhere, BlueprintReadWrite, Category="Morph Target");
+  UPROPERTY(EditAnywhere,BlueprintReadWrite, Category = morphTarget)
   float value;
-
+  
+	
+	
 };

@@ -1,106 +1,109 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0510"
-   version = "1.3">
-   <BuildAction
-      parallelizeBuildables = "YES"
-      buildImplicitDependencies = "YES">
-      <BuildActionEntries>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5C2DC354EDE9DF816C3EB183"
-               BuildableName = "MyProject7.app"
-               BlueprintName = "MyProject7 - iOS"
-               ReferencedContainer = "container:MyProject7.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-      </BuildActionEntries>
-   </BuildAction>
-   <TestAction
+  LastUpgradeVersion = "0500"
+  version = "1.3">
+  <BuildAction
+     parallelizeBuildables = "YES"
+     buildImplicitDependencies = "YES">
+     <BuildActionEntries>
+        <BuildActionEntry
+           buildForTesting = "YES"
+           buildForRunning = "YES"
+           buildForProfiling = "YES"
+           buildForArchiving = "YES"
+           buildForAnalyzing = "YES">
+           <BuildableReference
+              BuildableIdentifier = "primary"
+              BlueprintIdentifier = "43CB2E671DB010386B3E9091"
+              BuildableName = "MyProject7.app"
+              BlueprintName = "MyProject7 - iOS"
+              ReferencedContainer = "container:MyProject7.xcodeproj">
+           </BuildableReference>
+        </BuildActionEntry>
+     </BuildActionEntries>
+  </BuildAction>
+  <TestAction
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
-      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES"
+     selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+     shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "DebugGame">
-      <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F065836E73C8A2F3415E76E1"
-               BuildableName = "UE4CmdLineRun.xctest"
-               BlueprintName = "UE4CmdLineRun"
-               ReferencedContainer = "container:MyProject7.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-      </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5C2DC354EDE9DF816C3EB183"
-            BuildableName = "MyProject7.app"
-            BlueprintName = "MyProject7 - iOS"
-            ReferencedContainer = "container:MyProject7.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
-   </TestAction>
-   <LaunchAction
-      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
-      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      launchStyle = "0"
-      useCustomWorkingDirectory = "NO"
-      buildConfiguration = "DebugGame"
-      ignoresPersistentStateOnLaunch = "NO"
-      debugDocumentVersioning = "YES"
-      allowLocationSimulation = "YES">
-      <BuildableProductRunnable>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5C2DC354EDE9DF816C3EB183"
-            BuildableName = "MyProject7.app"
-            BlueprintName = "MyProject7 - iOS"
-            ReferencedContainer = "container:MyProject7.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
-      <CommandLineArguments>
-         <CommandLineArgument
-            argument = "&quot;/Users/skas/Documents/Unreal Projects/MyProject7/MyProject7.uproject&quot;"
-            isEnabled = "YES">
-         </CommandLineArgument>
-         <CommandLineArgument
-            argument = "-debug"
-            isEnabled = "YES">
-         </CommandLineArgument>
+     <Testables>
+        <TestableReference
+           skipped = "NO">
+           <BuildableReference
+              BuildableIdentifier = "primary"
+              BlueprintIdentifier = "4D492ACE78BDC7E1AE5D618A"
+              BuildableName = "UE4CmdLineRun.xctest"
+              BlueprintName = "UE4CmdLineRun"
+              ReferencedContainer = "container:MyProject7.xcodeproj">
+           </BuildableReference>
+        </TestableReference>
+     </Testables>
+     <MacroExpansion>
+        <BuildableReference
+           BuildableIdentifier = "primary"
+           BlueprintIdentifier = "43CB2E671DB010386B3E9091"
+           BuildableName = "MyProject7.app"
+           BlueprintName = "MyProject7 - iOS"
+           ReferencedContainer = "container:MyProject7.xcodeproj">
+        </BuildableReference>
+     </MacroExpansion>
+  </TestAction>
+  <LaunchAction
+     selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+     selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+     launchStyle = "0"
+     useCustomWorkingDirectory = "NO"
+     buildConfiguration = "DebugGame"
+     ignoresPersistentStateOnLaunch = "NO"
+     debugDocumentVersioning = "YES"
+     allowLocationSimulation = "YES">
+     <BuildableProductRunnable>
+        <BuildableReference
+           BuildableIdentifier = "primary"
+           BlueprintIdentifier = "43CB2E671DB010386B3E9091"
+           BuildableName = "MyProject7.app"
+           BlueprintName = "MyProject7 - iOS"
+           ReferencedContainer = "container:MyProject7.xcodeproj">
+        </BuildableReference>
+     </BuildableProductRunnable>
+     <CommandLineArguments>
+        <CommandLineArgument
+           argument = "&quot;/Users/skas/Documents/Unreal Projects/MyProject7/MyProject7.uproject&quot;"
+           isEnabled = "YES">
+        </CommandLineArgument>
+        <CommandLineArgument
+           argument = "-debug"
+           isEnabled = "YES">
+        </CommandLineArgument>
       </CommandLineArguments>
-      <AdditionalOptions>
-      </AdditionalOptions>
-   </LaunchAction>
-   <ProfileAction
-      shouldUseLaunchSchemeArgsEnv = "YES"
-      savedToolIdentifier = ""
-      useCustomWorkingDirectory = "NO"
-      buildConfiguration = "Development"
-      debugDocumentVersioning = "YES">
-      <BuildableProductRunnable>
+     <AdditionalOptions>
+     </AdditionalOptions>
+  </LaunchAction>
+  <ProfileAction
+     shouldUseLaunchSchemeArgsEnv = "YES"
+     savedToolIdentifier = ""
+     useCustomWorkingDirectory = "NO"
+     buildConfiguration = "Development"
+     debugDocumentVersioning = "YES">
+     <PathRunnable
+        FilePath = "/Users/skas/Documents/Unreal Projects/MyProject7/Binaries/Mac/MyProject7.app">
+     </PathRunnable>
+     <BuildableProductRunnable>
          <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5C2DC354EDE9DF816C3EB183"
-            BuildableName = "MyProject7.app"
-            BlueprintName = "MyProject7"
-            ReferencedContainer = "container:UE4.xcodeproj">
+             BuildableIdentifier = "primary"
+	          BlueprintIdentifier = "43CB2E671DB010386B3E9091"
+             BuildableName = "MyProject7.app"
+             BlueprintName = "MyProject7"
+             ReferencedContainer = "container:UE4.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
-   </ProfileAction>
-   <AnalyzeAction
-      buildConfiguration = "DebugGame">
-   </AnalyzeAction>
-   <ArchiveAction
-      buildConfiguration = "Development"
-      revealArchiveInOrganizer = "YES">
-   </ArchiveAction>
+     </BuildableProductRunnable>
+  </ProfileAction>
+  <AnalyzeAction
+     buildConfiguration = "DebugGame">
+  </AnalyzeAction>
+  <ArchiveAction
+     buildConfiguration = "Development"
+     revealArchiveInOrganizer = "YES">
+  </ArchiveAction>
 </Scheme>

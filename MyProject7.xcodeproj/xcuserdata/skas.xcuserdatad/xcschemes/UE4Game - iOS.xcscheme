@@ -14,9 +14,9 @@
            buildForAnalyzing = "YES">
            <BuildableReference
               BuildableIdentifier = "primary"
-              BlueprintIdentifier = "C6B2FF7FBB0C6ED89AB58424"
-              BuildableName = "libUE4XcodeHelper.a"
-              BlueprintName = "UE4XcodeHelper"
+              BlueprintIdentifier = "A5628470F317DFBC0AC94CF2"
+              BuildableName = "UE4Game.app"
+              BlueprintName = "UE4Game - iOS"
               ReferencedContainer = "container:MyProject7.xcodeproj">
            </BuildableReference>
         </BuildActionEntry>
@@ -32,7 +32,7 @@
            skipped = "NO">
            <BuildableReference
               BuildableIdentifier = "primary"
-              BlueprintIdentifier = "4D492ACE78BDC7E1AE5D618A"
+              BlueprintIdentifier = "3FA8A87A97F953207905EFD6"
               BuildableName = "UE4CmdLineRun.xctest"
               BlueprintName = "UE4CmdLineRun"
               ReferencedContainer = "container:MyProject7.xcodeproj">
@@ -42,9 +42,9 @@
      <MacroExpansion>
         <BuildableReference
            BuildableIdentifier = "primary"
-           BlueprintIdentifier = "C6B2FF7FBB0C6ED89AB58424"
-           BuildableName = "libUE4XcodeHelper.a"
-           BlueprintName = "UE4XcodeHelper"
+           BlueprintIdentifier = "A5628470F317DFBC0AC94CF2"
+           BuildableName = "UE4Game.app"
+           BlueprintName = "UE4Game - iOS"
            ReferencedContainer = "container:MyProject7.xcodeproj">
         </BuildableReference>
      </MacroExpansion>
@@ -58,9 +58,15 @@
      ignoresPersistentStateOnLaunch = "NO"
      debugDocumentVersioning = "YES"
      allowLocationSimulation = "YES">
-     <PathRunnable
-        FilePath = "/Users/Shared/UnrealEngine/4.5/Engine/Binaries/Mac/UE4XcodeHelper-Mac-Debug">
-     </PathRunnable>
+     <BuildableProductRunnable>
+        <BuildableReference
+           BuildableIdentifier = "primary"
+           BlueprintIdentifier = "A5628470F317DFBC0AC94CF2"
+           BuildableName = "UE4Game.app"
+           BlueprintName = "UE4Game - iOS"
+           ReferencedContainer = "container:MyProject7.xcodeproj">
+        </BuildableReference>
+     </BuildableProductRunnable>
      <AdditionalOptions>
      </AdditionalOptions>
   </LaunchAction>
@@ -71,14 +77,14 @@
      buildConfiguration = "Development"
      debugDocumentVersioning = "YES">
      <PathRunnable
-        FilePath = "/Users/Shared/UnrealEngine/4.5/Engine/Binaries/Mac/UE4XcodeHelper">
+        FilePath = "/Users/Shared/UnrealEngine/4.5/UE4Game/Binaries/IOS/UE4Game.app">
      </PathRunnable>
      <BuildableProductRunnable>
          <BuildableReference
              BuildableIdentifier = "primary"
-	          BlueprintIdentifier = "C6B2FF7FBB0C6ED89AB58424"
-             BuildableName = "UE4XcodeHelper"
-             BlueprintName = "UE4XcodeHelper"
+	          BlueprintIdentifier = "A5628470F317DFBC0AC94CF2"
+             BuildableName = "UE4Game.app"
+             BlueprintName = "UE4Game"
              ReferencedContainer = "container:UE4.xcodeproj">
          </BuildableReference>
      </BuildableProductRunnable>

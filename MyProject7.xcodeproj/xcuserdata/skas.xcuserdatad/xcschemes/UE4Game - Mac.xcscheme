@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D4743E36AC425ED173C6B453"
-               BuildableName = "MyProject7 - Mac"
-               BlueprintName = "MyProject7 - Mac"
+               BlueprintIdentifier = "A0F2B9613D802C986390EF91"
+               BuildableName = "UE4Game - Mac"
+               BlueprintName = "UE4Game - Mac"
                ReferencedContainer = "container:MyProject7.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4D492ACE78BDC7E1AE5D618A"
+               BlueprintIdentifier = "3FA8A87A97F953207905EFD6"
                BuildableName = "UE4CmdLineRun.xctest"
                BlueprintName = "UE4CmdLineRun"
                ReferencedContainer = "container:MyProject7.xcodeproj">
@@ -42,9 +42,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D4743E36AC425ED173C6B453"
-            BuildableName = "MyProject7 - Mac"
-            BlueprintName = "MyProject7 - Mac"
+            BlueprintIdentifier = "A0F2B9613D802C986390EF91"
+            BuildableName = "UE4Game - Mac"
+            BlueprintName = "UE4Game - Mac"
             ReferencedContainer = "container:MyProject7.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -59,11 +59,11 @@
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
       <PathRunnable
-         FilePath = "/Users/skas/Documents/Unreal Projects/MyProject7/Binaries/Mac/MyProject7-Mac-Debug.app">
+         FilePath = "/Users/Shared/UnrealEngine/4.5/Engine/Binaries/Mac/UE4-Mac-Debug.app">
       </PathRunnable>
       <CommandLineArguments>
          <CommandLineArgument
-            argument = "&quot;/Users/skas/Documents/Unreal Projects/MyProject7/MyProject7.uproject&quot;"
+            argument = "UE4Game"
             isEnabled = "YES">
          </CommandLineArgument>
          <CommandLineArgument
@@ -83,9 +83,9 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D4743E36AC425ED173C6B453"
-            BuildableName = "MyProject7.app"
-            BlueprintName = "MyProject7"
+            BlueprintIdentifier = "A0F2B9613D802C986390EF91"
+            BuildableName = "UE4.app"
+            BlueprintName = "UE4"
             ReferencedContainer = "container:UE4.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
